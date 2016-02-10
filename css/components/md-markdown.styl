@@ -1,0 +1,61 @@
+.md-markdown
+  blockquote
+    position relative
+    margin 0
+    padding 12px 12px 12px 48px
+    background-color c-light-pink
+
+    &:before
+      content '\201c'
+      font-family Georgia, serif
+      color c-red
+      position absolute
+      top 20px
+      left 8px
+      font-size 65px
+      font-weight 700
+      line-height 40px
+      margin-right 10px
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      margin-top 0
+
+  img
+    &:first-child
+      margin-top 0
+
+    &:last-child
+      margin-bottom 0
+
+  p
+    &:first-child
+      margin-top 0
+
+    &:last-child
+      margin-bottom 0
+
+  li
+    margin-top 10px
+
+    &:first-child
+      margin-top 0
+
+    > ul,
+    > ol
+      margin-top 10px
+
+  a
+    links()
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    padding 10px 40px

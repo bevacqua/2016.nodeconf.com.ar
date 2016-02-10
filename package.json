@@ -1,0 +1,32 @@
+{
+  "name": "nodeconf.com.ar",
+  "version": "1.0.0",
+  "description": "nodeconf.com.ar website",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bevacqua/nodeconf.com.ar.git"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (https://ponyfoo.com/)",
+  "bugs": {
+    "url": "https://github.com/bevacqua/nodeconf.com.ar/issues"
+  },
+  "homepage": "https://nodeconf.com.ar",
+  "scripts": {
+    "start": "build/start",
+    "build": "build/build"
+  },
+  "devDependencies": {
+    "babelify": "7.2.0",
+    "browserify": "13.0.0",
+    "bundle-collapser": "1.2.1",
+    "clean-css": "3.4.9",
+    "nib": "1.1.0",
+    "normalize.css": "3.0.3",
+    "pug-cli": "0.0.0",
+    "static-server": "2.0.1",
+    "stylus": "0.53.0",
+    "uglify-js": "2.6.1",
+    "watchify": "3.7.0"
+  }
+}

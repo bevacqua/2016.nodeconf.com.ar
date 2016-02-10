@@ -1,0 +1,35 @@
+table
+  width 100%
+
+thead
+  background-color darken(c-light-pink, 5%)
+
+tbody tr
+  background-color c-light-pink
+  &:nth-child(even)
+    background-color darken(c-light-pink, 2%)
+
+th,
+td
+  padding 10px
+
+@media only screen and (max-width: 950px)
+  table
+    display block
+  thead
+    display none
+  tbody
+    display block
+  tr
+    display block
+    margin-bottom 30px
+  tr:last-child
+    margin-bottom 0
+  td
+    display block
+  td:before
+    display block
+    content attr(data-label)
+    color c-red
+    font-size 13px
+    margin 0 0 5px
