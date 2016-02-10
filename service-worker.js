@@ -1,1 +1,70 @@
-!function e(n,t,r){function i(u,a){if(!t[u]){if(!n[u]){var f="function"==typeof require&&require;if(!a&&f)return f(u,!0);if(c)return c(u,!0);var s=Error("Cannot find module '"+u+"'");throw s.code="MODULE_NOT_FOUND",s}var o=t[u]={exports:{}};n[u][0].call(o.exports,function(e){var t=n[u][1][e];return i(t?t:e)},o,o.exports,e,n,t,r)}return t[u].exports}for(var c="function"==typeof require&&require,u=0;u<r.length;u++)i(r[u]);return i}({1:[function(e,n,t){"use strict";function r(e){"skipWaiting"in self&&self.skipWaiting(),e.waitUntil(caches.open(u+"fundamentals").then(function(e){return e.addAll(a)}))}function i(e){"clients"in self&&self.clients.claim&&self.clients.claim(),e.waitUntil(caches.keys().then(function(e){return Promise.all(e.filter(function(e){return 0!==e.indexOf(u)}).map(function(e){return caches["delete"](e)}))}))}function c(e){function n(e){function n(e){var n=e.clone();return caches.open(u+"pages").then(function(e){return e.put(i,n)}),e}function r(){return e||t()}return fetch(i).then(n,r)["catch"](r)}function t(){return caches.match("/offline.html").then(function(e){return e||r()})["catch"](r)}function r(){return new Response("",{status:503,statusText:"Service Unavailable"})}var i=e.request;"GET"===i.method&&e.respondWith(caches.match(i).then(n)["catch"](t))}var u="v1::",a=["/","/offline.html","/all.css","/all.js"];self.addEventListener("install",r),self.addEventListener("activate",i),self.addEventListener("fetch",c)},{}]},{},[1]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+'use strict';
+
+var version = 'v1::';
+var offlineFundamentals = ['/', '/offline.html', '/all.css', '/all.js'];
+
+self.addEventListener('install', installer);
+self.addEventListener('activate', activator);
+self.addEventListener('fetch', fetcher);
+
+function installer(e) {
+  if ('skipWaiting' in self) {
+    self.skipWaiting();
+  }
+
+  e.waitUntil(caches.open(version + 'fundamentals').then(function (cache) {
+    return cache.addAll(offlineFundamentals);
+  }));
+}
+
+function activator(e) {
+  if ('clients' in self && self.clients.claim) {
+    self.clients.claim();
+  }
+
+  e.waitUntil(caches.keys().then(function (keys) {
+    return Promise.all(keys.filter(function (key) {
+      return key.indexOf(version) !== 0;
+    }).map(function (key) {
+      return caches.delete(key);
+    }));
+  }));
+}
+
+function fetcher(e) {
+  var request = e.request;
+  if (request.method !== 'GET') {
+    return;
+  }
+
+  e.respondWith(caches.match(request).then(queriedCache).catch(failedFetchOrCache));
+
+  function queriedCache(cached) {
+    return fetch(request).then(fetchedFromNetwork, unableToResolve).catch(unableToResolve);
+
+    function fetchedFromNetwork(response) {
+      var cacheCopy = response.clone();
+      caches.open(version + 'pages').then(function (c) {
+        return c.put(request, cacheCopy);
+      });
+      return response;
+    }
+
+    function unableToResolve() {
+      return cached || failedFetchOrCache();
+    }
+  }
+
+  function failedFetchOrCache() {
+    return caches.match('/offline.html').then(function (cached) {
+      return cached || offlineResponse();
+    }).catch(offlineResponse);
+  }
+
+  function offlineResponse() {
+    return new Response('', { status: 503, statusText: 'Service Unavailable' });
+  }
+}
+
+},{}]},{},[1]);
