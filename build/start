@@ -1,6 +1,7 @@
 #!/bin/bash
 
 jade -w views/*.jade -o . &
+jade -w views/news/*.jade -o news &
 stylus --include-css -w css/all.styl -o . &
 watchify -vt babelify js/main.js -o all.js &
 watchify -vt babelify js/service-worker.js -o service-worker.js &

@@ -1,0 +1,14 @@
+block vars
+include ../partials/banner.jade
+doctype html
+html(lang='en')
+  head
+    include ../partials/meta.jade
+    include ../partials/styles.jade
+    block head
+  body
+    include ../partials/header.jade
+    main.ly-main
+      block main
+    include ../partials/footer.jade
+    include ../partials/scripts.jade

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 jade views/*.jade -o .
+jade views/news/*.jade -o news
 
 stylus --include-css --compress -o . css/all.styl
 cleancss --s0 -o all.css all.css

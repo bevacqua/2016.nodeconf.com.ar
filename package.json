@@ -1,7 +1,7 @@
 {
   "name": "nodeconf.com.ar",
   "version": "1.0.0",
-  "description": "nodeconf.com.ar website",
+  "description": "Public-facing website for NodeConf Argentina 2016",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "browserify": "13.0.0",
     "bundle-collapser": "1.2.1",
     "clean-css": "3.4.9",
+    "jstransformer-megamark": "0.1.0",
     "nib": "1.1.0",
     "normalize.css": "3.0.3",
     "pug-cli": "0.0.0",
