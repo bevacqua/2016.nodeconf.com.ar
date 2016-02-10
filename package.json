@@ -14,7 +14,8 @@
   "homepage": "https://nodeconf.com.ar",
   "scripts": {
     "start": "build/start",
-    "build": "build/build"
+    "build": "build/build",
+    "sync": "build/sync"
   },
   "devDependencies": {
     "babelify": "7.2.0",
