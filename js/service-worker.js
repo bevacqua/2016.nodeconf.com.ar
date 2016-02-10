@@ -4,8 +4,8 @@ var version = 'v1::';
 var offlineFundamentals = [
   '/',
   '/offline.html',
-  '/css/all.css',
-  '/js/all.js'
+  '/all.css',
+  '/all.js'
 ];
 
 self.addEventListener('install', installer);
