@@ -555,14 +555,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .ly-main {
-  display: inline-block;
+  margin: 80px;
+  padding: 20px;
   text-align: left;
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .ly-main {
-    padding-bottom: 80px;
-  }
 }
 .ly-header {
   margin: 80px;
