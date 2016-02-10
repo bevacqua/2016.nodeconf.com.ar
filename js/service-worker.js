@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1::';
+var version = 'v2::';
 var offlineFundamentals = [
   '/',
   '/offline.html',
