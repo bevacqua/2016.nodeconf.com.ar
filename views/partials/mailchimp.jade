@@ -1,0 +1,20 @@
+h2#subscribe Subscribe
+p Don't want to ever miss speaker announcements, discounted ticket sales, and need to stay on top of news about NodeConf Argentina?
+p
+  span Enter your email address below and hit
+  span=' '
+  em Subscribe
+  span !
+form.mc-form(
+  method='post',
+  action='https://nodeconf.us12.list-manage.com/subscribe/post?u=41bf527ccce1656057feaf22f&id=71ba118ecb',
+  target='_blank',
+  novalidate=''
+)
+  input.mc-input(type='email', name='EMAIL', value='', placeholder='Enter your email address here.')
+
+  //- bot protection
+  div.mc-protection(aria-hidden='true')
+    input(type='text', name='b_41bf527ccce1656057feaf22f_71ba118ecb', tabindex='-1', value='')
+
+  input.mc-submit(type='submit', value='Subscribe to the mailing list', name='subscribe')
