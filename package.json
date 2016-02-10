@@ -18,6 +18,7 @@
     "sync": "build/sync"
   },
   "devDependencies": {
+    "babel-preset-es2015": "6.5.0",
     "babelify": "7.2.0",
     "browserify": "13.0.0",
     "bundle-collapser": "1.2.1",
