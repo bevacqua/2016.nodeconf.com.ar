@@ -110,8 +110,8 @@ setInterval("showDate()", 1000);
 $(function() {
     
     var contador = 1;     
-    $('.menu_bar').click(function(){
-		event.preventDefault(); 
+    $('.menu_bar').click(function(e){
+		e.preventDefault(); 
 
 		if(contador == 1){
             contador = 0;
@@ -127,4 +127,3 @@ $(function() {
 
 	}); 
 });
-                    
