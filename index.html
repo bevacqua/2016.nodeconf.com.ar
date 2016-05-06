@@ -10,7 +10,7 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
- <!--  Design by
+<!--  Design by
 
    ````        ```          ````           ````````            ```````````     `````````
    oMMy        dMM/        -NMM:          `MMMMMMMMMmy/`       dMMMMMMMMMm     mMMMMMMMMMNds:
@@ -29,48 +29,45 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 <link rel="shortcut icon" href="images/favicon.png">
-
 <meta name="theme-color" content="#1A2024">
 <meta name="msapplication-navbutton-color" content="#1A2024">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1A2024">
-
 <meta name="keywords" content="nodeconf,argentina,konex,buenos aires,javascript,nodejs,node,js">
-
 <meta name="description" property="og:description" itemprop="description" content="Join us for NodeConf Argentina! Our first edition will be held at Ciudad Cultural Konex, in November 18-19, 2016. This will be the first international Node.js conference held in Buenos Aires, Argentina.">
 <meta property="og:site_name" content="NodeConf Argentina">
-
 <link rel="canonical" href="https://2016.nodeconf.com.ar/">
 <meta property="og:url" itemprop="url" content="https://2016.nodeconf.com.ar/">
-
 <meta name="twitter:title" itemprop="name" property="og:title" content="NodeConf Argentina">
 <meta name="twitter:description" content="Join us for NodeConf Argentina! Our first edition will be held at Ciudad Cultural Konex, in November 18-19, 2016. This will be the first international Node.js conference held in Buenos Aires, Argentina.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@nodeconfar">
 <meta name="twitter:creator" content="@nodeconfar">
 <meta name="author" itemprop="creator" content="NodeConf Argentina <hello@nodeconf.com.ar>">
-
 <meta property="og:image" itemprop="images" content="https://2016.nodeconf.com.ar/images/ciudad.png">
 <meta property="og:image" content="https://2016.nodeconf.com.ar/images/logo.svg">
 
 <!-- twitter only cares about the last meta image repeat the cover -->
 <meta name="twitter:image:src" content="https://2016.nodeconf.com.ar/images/ciudad.png">
-
 <link rel="stylesheet" type="text/css" href="assets/css/nodeconf.css" />
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
 <script src="assets/js/retina.min.js" type="text/javascript" ></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript" ></script>
 <script src="assets/js/pecas.js" type="text/javascript" ></script>
+<script src="assets/js/owl.carousel.js"></script>
 </head>
 <body>
 <header>
   <div class="menu">
-    <div class="menu_bar"> <a href="#" class="bt-menu"></a> </div>
+    <div class="menu_bar">
+      <button href="#" class="bt-menu"></button>
+    </div>
     <div id="nav-anchor"></div>
     <nav>
       <ul>
         <li><a href="#home">home</a></li>
         <li><a href="#about">about</a></li>
+        <li><a href="#venue">venue</a></li>
         <li><a href="#sponsor">sponsors</a></li>
       </ul>
     </nav>
@@ -82,11 +79,11 @@
       <p>DATE: <span id="dateDiv"></span></p>
       <p>FOLLOW US IN <a href="https://twitter.com/nodeconfar" target="_blank">@NODECONFAR</a></p>
     </div>
-      <div class="icon icon-moon cuatro glitch" data-text="&#xe904;">&#xe904;</div>
-      <div class="icon icon-cruz cinco glitch" data-text="&#xe902;">&#xe902;</div>
-      <div class="icon icon-dots uno glitch" data-text="&#xe903;">&#xe903;</div>
-      <div class="icon icon-dots dos glitch" data-text="&#xe903;">&#xe903;</div>
-    <div class="row content illustration_01">
+    <div class="icon icon-moon cuatro glitch" data-text="&#xe904;">&#xe904;</div>
+    <div class="icon icon-cruz cinco glitch" data-text="&#xe902;">&#xe902;</div>
+    <div class="icon icon-dots uno glitch" data-text="&#xe903;">&#xe903;</div>
+    <div class="icon icon-dots dos glitch" data-text="&#xe903;">&#xe903;</div>
+    <div class="row content iso_black">
       <div class="col-md-4 pull-right">
         <div class="smallscreen"> <img src="images/logo-cel.svg"> </div>
       </div>
@@ -95,71 +92,110 @@
         <h2 class="glitch-txt" data-text="Buenos Aires, Argentina">Buenos Aires, Argentina</h2>
         <h4 class="glitch-txt" data-text="Ciudad Cultural Konex">Ciudad Cultural Konex</h4>
         <h4 class="glitch-txt" data-text="18 - 19 November, 2016">18 - 19 November, 2016</h4>
-        <form class="mc-form" method="post" action="https://nodeconf.us12.list-manage.com/subscribe/post?u=41bf527ccce1656057feaf22f&amp;id=71ba118ecb" target="_blank" novalidate=""><input class="mc-input" type="email" name="EMAIL" value="" placeholder="Subscribe to our mailing list"><div class="mc-protection" aria-hidden="true"><input type="text" name="b_41bf527ccce1656057feaf22f_71ba118ecb" tabindex="-1" value=""></div><button type="submit" name="subscribe" value="" class="mc-submit"/><i class="icon icon-ir"></i></button></form>
-        <div class="icon icon-dots tres glitch" data-text="&#xe903;">&#xe903;</div>
+        <form class="mc-form" method="post" action="https://nodeconf.us12.list-manage.com/subscribe/post?u=41bf527ccce1656057feaf22f&amp;id=71ba118ecb" target="_blank" novalidate>
+          <input class="mc-input" type="email" name="EMAIL" value="" placeholder="Subscribe to our mailing list">
+          <div class="mc-protection" aria-hidden="true">
+            <input type="text" name="b_41bf527ccce1656057feaf22f_71ba118ecb" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" value="" class="mc-submit"/>
+          <i class="icon icon-ir"></i>
+          </button>
+        </form>
+
       </div>
       <div class="clearfix"></div>
       <a class="arrow-wrap" href="#about"> <span class="arrow"></span> </a> </div>
   </div>
 </section>
-<section id="about">
+<section id="about" class="dark-theme">
   <div class="title-section"><span class="nro">01|</span>about</div>
   <div class="container">
-    <div class="row content illustration_02">
-      <div class="col-md-7 conference">
+    <div class="row content iso_color">
+      <div class="col-md-6 conference">
         <h1>The Conference</h1>
         <p>NodeConf Argentina is the first international Node.js conference taking place in Latin American territory, and a not-for-profit community effort to push Node.js forward in Argentina and Latin America as a whole.</p>
         <p>This year’s conference will be a two–day event in sunny Buenos Aires, Argentina, held during November 18th & 19th. Both action-packed days will be comprised of internationally acclaimed, regional, and local speakers. We are expecting Noders, JavaScripters, front-enders, and other programmers from all over the world.</p>
         <p>Our topmost concern is to guarantee the most enjoyable experience to our attendees, while providing a safe and welcoming environment for everyone.</p>
-          <p class="social"><a href="https://twitter.com/nodeconfar" target="_blank" class="icon icon-twitter"></a></p>
+        <p class="social"><a href="https://twitter.com/nodeconfar" target="_blank" class="icon icon-twitter"></a></p>
       </div>
-      <div class="col-md-4"> </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row org">
-      <div class="col-md-12">
-        <h1>The Organizers</h1>
-      </div>
-      <div class="organ">
-        <div class="col-md-3">
-          <div class="clearfix"><h4>Nicolás</h4><p class="social"><a href="https://twitter.com/nzgb" target="_blank" class="icon icon-twitter"></a></p></div>
-          <p>Nicolás is a frequent conference speaker, a published author, a profilic open-source contributor, and passionate about community-building in Buenos Aires – where he organizes BeerJS and co-organizes NodeSchool events. He knows the conference scene inside out and understands what turns an event into an unforgettable experience.</p>
-        </div>
-        <div class="col-md-3">
-            <div class="clearfix"><h4>Alejandro</h4><p class="social"><a href="https://twitter.com/a0viedo" target="_blank" class="icon icon-twitter"></a></p></div>
-
-
-          <p>Alejandro initially brought NodeSchool to Buenos Aires, jumpstarting the local Node.js community. He is passionate about education, electronics, open-source, and community-driven events. These days, he also helps organize NodeBots and a local Node.js meetup. He knows how to foster an inclusive environment where attendees can share their knowledge, learn, feel safe and make friends.</p>
-        </div>
-        <div class="col-md-3">
-          <div class="clearfix"><h4>Leandro</h4><p class="social"><a href="https://twitter.com/pr0duc3r" target="_blank" class="icon icon-twitter"></a></p></div>
-
-          <p>Leandro has over 15 years experience in development, managing teams ranging from infrastructure to interface design. He’s an IoT enthusiast and an early Node.js adopter. Leandro produced important cultural events in the City of Buenos Aires, having worked in public broadcasting for several years. He brings a wealth of event–organizing experience to the table.</p>
-        </div>
-        <div class="col-md-3">
-          <div class="clearfix"><h4>Lars</h4><p class="social"><a href="https://twitter.com/jaclar" target="_blank" class="icon icon-twitter"></a></p></div>
-          <p>Lars is a JavaScript hacker and has been using Node.js in production for several years in his role as the technical lead of a Buenos Aires— based startup. Growing the local Node.js community is what drives him: he helps organize NodeSchool and a local Node.js meetup. He is passionate about offering community-building opportunities, as well as spreading technical knowledge about Node.js.</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
+      <div class="col-md-5"> </div>
     </div>
   </div>
 </section>
-<section id="sponsor" data-midnight="black">
+<section id="venue" class="dark-theme">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>The Venue</h1>
+        <p>The “Ciudad Cultural Konex” complex is one of the top Buenos Aires venues – having held art exhibitions, theater & entertainment, cultural enrichment events, and business conventions.</p>
+        <p>The complex is massive: 2655m2 with a generous front yard, several large gathering areas, and two spacious auditoriums – which explains the wide variety of events that have been held at CCK in the past.</p>
+        <p>When combined with its amplitude and unique layout, its design has attracted several development conventions in the past, making it a well-regarded venue that’s recognized by many locals for its convenience, conception, and generous dimensions.</p>
+      </div>
+      <div class="col-md-5 col-xs-push-1">
+        <div class="owl-carousel">
+            <div class="item"><img src="images/konex-1.jpg"></div>
+            <div class="item"><img src="images/konex-3.jpg"></div>
+            <div class="item"><img src="images/konex-2.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map"></div>
+</section>
+<section class="dark-theme">
+  <div class="container org">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>The Organizers</h1>
+    </div>
+    <div class="organ">
+      <div class="col-md-3">
+        <div class="clearfix">
+          <h4>Nicolás</h4>
+          <p class="social"><a href="https://twitter.com/nzgb" target="_blank" class="icon icon-twitter"></a></p>
+        </div>
+        <p>Nicolás is a frequent conference speaker, a published author, a profilic open-source contributor, and passionate about community-building in Buenos Aires – where he organizes BeerJS and co-organizes NodeSchool events. He knows the conference scene inside out and understands what turns an event into an unforgettable experience.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="clearfix">
+          <h4>Alejandro</h4>
+          <p class="social"><a href="https://twitter.com/a0viedo" target="_blank" class="icon icon-twitter"></a></p>
+        </div>
+        <p>Alejandro initially brought NodeSchool to Buenos Aires, jumpstarting the local Node.js community. He is passionate about education, electronics, open-source, and community-driven events. These days, he also helps organize NodeBots and a local Node.js meetup. He knows how to foster an inclusive environment where attendees can share their knowledge, learn, feel safe and make friends.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="clearfix">
+          <h4>Leandro</h4>
+          <p class="social"><a href="https://twitter.com/pr0duc3r" target="_blank" class="icon icon-twitter"></a></p>
+        </div>
+        <p>Leandro has over 15 years experience in development, managing teams ranging from infrastructure to interface design. He’s an IoT enthusiast and an early Node.js adopter. Leandro produced important cultural events in the City of Buenos Aires, having worked in public broadcasting for several years. He brings a wealth of event–organizing experience to the table.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="clearfix">
+          <h4>Lars</h4>
+          <p class="social"><a href="https://twitter.com/jaclar" target="_blank" class="icon icon-twitter"></a></p>
+        </div>
+        <p>Lars is a JavaScript hacker and has been using Node.js in production for several years in his role as the technical lead of a Buenos Aires— based startup. Growing the local Node.js community is what drives him: he helps organize NodeSchool and a local Node.js meetup. He is passionate about offering community-building opportunities, as well as spreading technical knowledge about Node.js.</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</section>
+<section id="sponsor" class="dark-theme">
   <div class="title-section"><span class="nro">02 |</span>sponsorship</div>
   <div class="container">
     <h2>We are currently seeking sponsorship</h2>
-  <p>If you want to contribute, we'd love to hear from you</p>
-    <a href="mailto:sponsors@nodeconf.com.ar" target="_blank">be a sponsor</a>
-  </div>
+    <p>If you want to contribute, we'd love to hear from you</p>
+    <a href="mailto:sponsors@nodeconf.com.ar" target="_blank" class="btn-action">be a sponsor</a> </div>
   <div id="bodymovin"></div>
 </section>
 <footer>
-    <div class="container">
-  <div class="col-xs-6"><a href="#"><img src="images/footer.svg"></a></div>
-  <div class="col-xs-6 text-right"><a href="code-of-conduct.html">code of conduct</a></div></div>
+  <div class="container">
+    <div class="col-xs-6"><a href="index.html"><img src="images/footer.svg"></a></div>
+    <div class="col-xs-6 text-right"><a href="code-of-conduct.html">code of conduct</a></div>
+  </div>
 </footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQfcDN9E0XZQcuYDEV4WaYK0J_4Q63mi4&signed_in=true&libraries=places&callback=init" async defer></script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -181,5 +217,6 @@ $("#sponsor").hover(function () {
   anim.play();
 });
 </script>
+
 </body>
 </html>
