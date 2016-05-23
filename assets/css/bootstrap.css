@@ -57,7 +57,7 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 em {
-  font-style: normal;  
+  font-style: normal;
 }
 b,
 strong {
@@ -199,6 +199,36 @@ table {
 td,
 th {
   padding: 0;
+}
+body {
+  scrollbar-base-color: black;
+  scrollbar-base-color: black;
+  scrollbar-3dlight-color: black;
+  scrollbar-highlight-color: black;
+  scrollbar-track-color: black;
+  scrollbar-arrow-color: black;
+  scrollbar-shadow-color: black;
+  scrollbar-dark-shadow-color: black;
+
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(26,34,36,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.4);
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
