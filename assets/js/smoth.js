@@ -16,54 +16,54 @@ $(function() {
   var offset = $(".menu-call").offset();
   var topPadding = 15;
   $(window).scroll(function() {
-      if ($(window).scrollTop() > offset.top) {
-          $(".menu-call").stop().animate({
-              marginTop: $(window).scrollTop() - offset.top + topPadding
-          });
-      } else {
-          $(".menu-call").stop().animate({
-              marginTop: 0
-          });
-      };
+    if ($(window).scrollTop() > offset.top) {
+      $(".menu-call").stop().animate({
+        marginTop: $(window).scrollTop() - offset.top + topPadding
+      });
+    } else {
+      $(".menu-call").stop().animate({
+        marginTop: 0
+      });
+    };
   });
 });
 
 $(document).ready(function () {
-    $(document).on("scroll", onScroll);
+  $(document).on("scroll", onScroll);
 
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
+  //smoothscroll
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
 
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
+    $('a').each(function () {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
 
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('.call-for-speakers').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+    var target = this.hash,
+    menu = target;
+    $target = $(target);
+    $('.call-for-speakers').stop().animate({
+      'scrollTop': $target.offset().top+2
+    }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
     });
+  });
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('.menu-call a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.menu-call ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
+  var scrollPos = $(document).scrollTop();
+  $('.menu-call a').each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('.menu-call ul li a').removeClass("active");
+      currLink.addClass("active");
+    }
+    else{
+      currLink.removeClass("active");
+    }
+  });
 }
