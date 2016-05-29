@@ -73,7 +73,7 @@
 #home{ background:#f1f1f1;}
 #home .container {position: relative;}
 #home h3 {font-size: 9vw; padding-top: 100px; margin-left: -5px; margin-bottom: 0;}
-#conduct h3 {font-size: 45px; line-height: 50px; padding-top: 50px; color: #bbdc2f;}
+#conduct h3 {font-size: 45px; line-height: 50px; margin-top: 50px; color: #bbdc2f;}
 .session {padding-top: 20px; font-size: 12px; text-transform: uppercase; float: left; }
 .icon-dots, .icon-moon {font-size: 50px; color: #d9d9d9; position: absolute; }
 .icon-cruz {font-size: 45px; color: #bbdc2f; position: absolute; }
@@ -115,7 +115,7 @@ header nav ul li{display:inline-block}
 .mc-form { width: 270px; margin-top: 50px; margin-bottom: 100px; border-bottom: solid 1px #f8cf1c; line-height: 40px;}
 button i {font-size: 13px;}
 .mc-protection {visibility: hidden; width: 1px; float: left;}
-.mc-input { font-size: 16px; line-height: 40px; width: 220px; background-color: transparent; border: none;}
+.mc-input { font-size: 16px; line-height: 40px; width: 160px; background-color: transparent; border: none;}
 .smallscreen { display: none; padding: 50px 0; margin: 0 auto; width: 198px;}
 .content { background-size: 384px; background-attachment: fixed; background-repeat: no-repeat; clear: both;}
 .iso_black { background-color: #f1f1f1; background-image: url("../../images/logo-w.svg"); background-position: 82% 100px;}
@@ -143,8 +143,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 .call-for-speakers strong {color: #a5ba39;}
 .call-for-speakers p {margin-bottom: 5px;}
 .call-for-speakers h4 {border-bottom: solid 1px #1a2024; padding-bottom: 10px; margin-bottom: 20px;}
-.call-speak:after {clear: both; display: table; content: " ";}
-.call-speak {width: 100%; clear: both;}
+.call-speak:after, .back-home:after {clear: both; display: table; content: " ";}
+.call-speak {width: 100%; clear: both; overflow-x: hidden;}
 .bullet {margin-left: 10px;}
 .bullet:before {content: "•"; display: inline-block; margin-right: 10px; color:#a5ba39; }
 
@@ -165,7 +165,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 .hexagon .hexa-in:before {right:0;transform-origin:right top;transform:rotate(60deg) translate(110px,0)}
 .call-to-action {background-color: #BADE09; width: 100%; color:#1A2024; text-align: center; padding: 50px 0;}
 .call-to-action a {color:#1A2024; }
-.call-to-action a.btn-action {background-color:#F1F1F1;}
+.call-to-action a.btn-action, mc-submit {background-color:#F1F1F1;}
 .call-to-action a.btn-action:hover {background-color: #F1F1F1; }
 #profile-speaker {background-color: #f1f1f1;}
 #profile-speaker .bottom {height: 100px; border-width: 0 100vw 650px 0; border-style: solid; border-color: transparent transparent #1A2024 #f1f1f1;}
@@ -207,6 +207,7 @@ h4 {text-transform: uppercase;}
 /*SPONSOR*/
 #sponsor h2{ text-transform: uppercase;  text-align: center; margin-top: 100px; }
 #sponsor p {text-align: center; color: #fff; font-size: 20px; letter-spacing: 1px;}
+.mc-submit {text-align: center;  padding: 0; text-transform: uppercase; font-size: 17px; display: inline-block;}
 a.btn-action {margin: 30px auto; text-align: center;  border-radius: 50px; padding: 10px 10px 10px 20px; text-transform: uppercase; font-size: 17px; width: 180px; display: block;}
 #sponsor a.btn-action {background-color:#bbdc2f;}
 #sponsor a.btn-action:hover {background-color: #f8cf1c;}
@@ -414,7 +415,7 @@ footer a{text-transform: uppercase; padding-left: 10px;}
   #profile-speaker .bottom {border-width: 0 100vw 450px 0; margin-bottom: 200px;}
   .col-xs-push-1 {left: 0;}
   .call-for-speakers li { -webkit-column-count: 1; -moz-column-count: 1; column-count: 1;}
-  .pull-right {display: none;}
+  .menu-call {display: none;}
   .seis {top: 80px; right: 195px}
   .tres {top: 50px;}
 }
@@ -428,11 +429,12 @@ footer a{text-transform: uppercase; padding-left: 10px;}
   .mailing_end, #home form {margin-left: auto; margin-right: auto;}
   .dos {top: 325px;}
   .tres {top: 630px; opacity: .3; color: #bbdc2f;}
+  #conduct .col-md-8 {float: none; clear: both;}
 }
 
 @media (min-width: 300px) and (max-width: 480px)  {
   #sponsor h2 {margin-top: 170px;}
-  #conduct h3 {font-size: 30px;}
+  #conduct h3 {font-size: 30px; margin-top: 0;}
   .code-conduct {padding: 20px 5px;}
   .call-for-speakers {padding: 10px;}
   .code-conduct span, .code-conduct ul {float: none}
@@ -446,5 +448,6 @@ footer a{text-transform: uppercase; padding-left: 10px;}
   .profile-img-trama {background-size: 85%;}
   #profile-speaker .bottom {border-width: 0 100vw 250px 0; margin-bottom: 400px;}
   .back-home {margin-top: 20px;}
-}
-@media and (max-width: 320px)  {.menu_bar { margin-right: 10px;} }
+  #conduct .container {width: 100%;}
+
+@media only and (max-width: 320px)  {.menu_bar { margin-right: 10px;} }
