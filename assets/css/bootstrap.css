@@ -72,7 +72,7 @@ font-size: 2em;
   color: #bbdc2f;
 }
 mark {
-color: #000;
+color: #1A2024;
 background: #ff0;
 }
 small {
@@ -235,7 +235,7 @@ background: rgba(0,0,0,0.4);
 *,
 *:before,
 *:after {
-  color: #000 !important;
+  color: #1A2024 !important;
   text-shadow: none !important;
   background: transparent !important;
   -webkit-box-shadow: none !important;
@@ -286,10 +286,10 @@ h3 {
 }
 .btn > .caret,
 .dropup > .btn > .caret {
-  border-top-color: #000 !important;
+  border-top-color: #1A2024 !important;
 }
 .label {
-  border: 1px solid #000;
+  border: 1px solid #1A2024;
 }
 .table {
   border-collapse: collapse !important;
@@ -345,12 +345,12 @@ button:focus {
 
 }
 a {
-color: #000;
+color: #1A2024;
 text-decoration: none;
 }
 a:hover,
 a:focus {
-color: #000;
+color: #1A2024;
 text-decoration: none;
 }
 a:focus {
@@ -1817,24 +1817,28 @@ height: 34px;
 padding: 6px 12px;
 font-size: 14px;
 line-height: 1.42857143;
-color: #000;
+color: #1A2024;
 background-color: #fff;
 background-image: none;
-border: 2px solid #000;
+border: 2px solid #1A2024;
 }
 .form-control:focus {
-border-color: #000;
+border-color: #1A2024;
 outline: 0;
 }
+input::-moz-placeholder { color: #1A2024; opacity: 1; }
+input:-ms-input-placeholder { color: #1A2024;}
+input::-webkit-input-placeholder { color: #1A2024;}
+
 .form-control::-moz-placeholder {
-color: #000;
+color: #1A2024;
 opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-color: #000;
+color: #1A2024;
 }
 .form-control::-webkit-input-placeholder {
-color: #000;
+color: #1A2024;
 }
 .form-control::-ms-expand {
 background-color: transparent;
@@ -2350,7 +2354,7 @@ border: none;
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-color: #000;
+color: #1A2024;
 background-color: transparent;
 border: none;
   outline: 0;
@@ -5104,14 +5108,14 @@ float: right;
 font-size: 21px;
 font-weight: normal;
 line-height: 1;
-color: #000;
+color: #1A2024;
 text-shadow: 0 1px 0 #fff;
 filter: alpha(opacity=20);
 opacity: .2;
 }
 .close:hover,
 .close:focus {
-color: #000;
+color: #1A2024;
 text-decoration: none;
 cursor: pointer;
 filter: alpha(opacity=50);
@@ -5182,7 +5186,7 @@ right: 0;
 bottom: 0;
 left: 0;
 z-index: 1040;
-background-color: #000;
+background-color: #1A2024;
 }
 .modal-backdrop.fade {
 filter: alpha(opacity=0);
@@ -5296,7 +5300,7 @@ max-width: 200px;
 padding: 3px 8px;
 color: #fff;
 text-align: center;
-background-color: #000;
+background-color: #1A2024;
 border-radius: 4px;
 }
 .tooltip-arrow {
@@ -5311,56 +5315,56 @@ bottom: 0;
 left: 50%;
 margin-left: -5px;
 border-width: 5px 5px 0;
-border-top-color: #000;
+border-top-color: #1A2024;
 }
 .tooltip.top-left .tooltip-arrow {
 right: 5px;
 bottom: 0;
 margin-bottom: -5px;
 border-width: 5px 5px 0;
-border-top-color: #000;
+border-top-color: #1A2024;
 }
 .tooltip.top-right .tooltip-arrow {
 bottom: 0;
 left: 5px;
 margin-bottom: -5px;
 border-width: 5px 5px 0;
-border-top-color: #000;
+border-top-color: #1A2024;
 }
 .tooltip.right .tooltip-arrow {
 top: 50%;
 left: 0;
 margin-top: -5px;
 border-width: 5px 5px 5px 0;
-border-right-color: #000;
+border-right-color: #1A2024;
 }
 .tooltip.left .tooltip-arrow {
 top: 50%;
 right: 0;
 margin-top: -5px;
 border-width: 5px 0 5px 5px;
-border-left-color: #000;
+border-left-color: #1A2024;
 }
 .tooltip.bottom .tooltip-arrow {
 top: 0;
 left: 50%;
 margin-left: -5px;
 border-width: 0 5px 5px;
-border-bottom-color: #000;
+border-bottom-color: #1A2024;
 }
 .tooltip.bottom-left .tooltip-arrow {
 top: 0;
 right: 5px;
 margin-top: -5px;
 border-width: 0 5px 5px;
-border-bottom-color: #000;
+border-bottom-color: #1A2024;
 }
 .tooltip.bottom-right .tooltip-arrow {
 top: 0;
 left: 5px;
 margin-top: -5px;
 border-width: 0 5px 5px;
-border-bottom-color: #000;
+border-bottom-color: #1A2024;
 }
 .popover {
 position: absolute;
@@ -5667,7 +5671,7 @@ height: 10px;
 margin: 1px;
 text-indent: -999px;
 cursor: pointer;
-background-color: #000 \9;
+background-color: #1A2024 \9;
 background-color: rgba(0, 0, 0, 0);
 border: 1px solid #fff;
 border-radius: 10px;
