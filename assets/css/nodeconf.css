@@ -95,10 +95,10 @@
 /*MENU*/
 .menu_bar {display: none;}
 header {position: fixed; right: 50px; top:60%; z-index: 100; -webkit-transform-origin: bottom right; transform-origin: bottom right; -webkit-transform: translateX(0) rotate(90deg); transform: translateX(0) rotate(90deg);}
-header nav{text-transform:uppercase;font-size:16px;}
+header nav{text-transform:uppercase;font-size:16px; padding-right: 70px;}
 header nav ul{padding:0;}
-header nav ul li a{height:40px;line-height:40px;padding:0 12px; display:block; color: #495056;}
-header nav ul li a:hover, header nav ul li a.active, header nav ul li a:active, header nav ul li a:focus {background-color: #bbdc2f; color: #1A2024;}
+header nav ul li a, header nav ul li a:focus {height:40px;line-height:40px;padding:0 12px; display:block; color: #495056;}
+header nav ul li a:hover, header nav ul li a.active, header nav ul li:last-child a:focus {background-color: #bbdc2f; color: #1A2024;}
 header nav ul li{display:inline-block}
 @media only screen and (max-width:959px){
   header nav{height: 100vh; width: 100%; right:-100%;position:fixed;z-index:100; margin: 0!important; background-color: #f1f1f1;}
@@ -216,13 +216,14 @@ a.btn-action {margin: 30px auto; text-align: center;  border-radius: 50px; -webk
 a.btn-action:after, .mc-submit:after {content: "\e905"; font-family: 'icomoon'; color:transparent; font-size: 11px; margin-left: 0px; display: inline-block;  -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s;  -ms-transition: all 0.2s;  -o-transition: all 0.2s;}
 a.btn-action:hover:after {margin-left: 10px; color:#1A2024;}
 .btn-action form {margin-left: auto;  margin-right: auto;}
-#bodymovin {height: 100%; width: 100%; padding-top: 200px; margin-bottom: -6px;}
+#bodymovin {height: 100%; width: 100%; padding-top: 275px; overflow: hidden;}
 #animated-speaker #bodymovin {padding-top: 0px;}
 
 /*FOOTER*/
-footer {height: 35px; line-height: 35px; background-color: #bbdc2f; font-size: 13px; padding: 0 5px;}
-footer a{text-transform: uppercase; padding-left: 10px;}
-@media only screen and (max-width:959px){footer {font-size: 12px;} }
+#wrapper{ min-height: 100vh; height: auto; margin: 0 auto -35px; padding: 0 0 35px;}
+footer {height: 35px; line-height: 35px; background-color: #bbdc2f; font-size: 13px; padding: 0 5px; position: absolute; width: 100%; margin-top: -7px;}
+footer a {text-transform: uppercase; padding-left: 10px;}
+@media only screen and (max-width:959px){footer  {font-size: 12px;} }
 .arrow-wrap { width: 15px; margin: 40px auto; display: block;}
 .arrow { width: 15px; height: 15px; border-radius: 15px;background-color: #bbdc2f; display: block; animation: pounding .5s linear infinite alternate;}
 
@@ -404,6 +405,7 @@ footer a{text-transform: uppercase; padding-left: 10px;}
 
 @media (min-width: 1500px) and (max-width: 2000px) {
   .iso_color, .iso_black { background-position: 75% 100px;}
+  #bodymovin {padding-top: 200px;}
 }
 @media (min-width: 993px) and (max-width: 1170px) {
   .iso_color, .iso_black { background-position: 87% 100px;}
