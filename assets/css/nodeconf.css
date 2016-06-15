@@ -156,10 +156,6 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 #speakers .col-md-3 a, #tickets .col-md-3 p {color:#BADE09; }
 #speakers .col-md-3 a:hover {color: #FED007;}
 .hexagon.soon {background-color: #0f161a; margin-bottom: 150px;}
-#tickets .hexagon.now {background-color: #FED007;}
-.icon-buy, .icon-soldout { fill: #1A2024; width: 120px; height: 145px; margin-top: -20px;}
-.icon-buy { fill: #1A2024;}
-.icon-soldout { fill: #ac9108;}
 .hexagon.now {cursor:pointer; }
 #speakers .hexagon.now:hover:after, #speakers .col-md-3 a:hover .hexagon.now:after {opacity: 1;}
 #speakers .hexagon.now:after, #speakers .col-md-3 a .hexagon.now:after {content: url(../../images/see-more.svg); opacity: 0; text-align: right; width: 100%; height: 100%; display: block; position: absolute; bottom: -92px; right: 14px; color: #f1f1f1; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
@@ -187,6 +183,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 .profile-img img {width: 300px; }
 .profile-img-trama {background: url(../../images/speak-b.svg) no-repeat; position: absolute; display: block; width: 384px; height: 274px;  left: -30px; z-index: 1;}
 #conduct .container {position: relative;}
+
+/*Tickets*/
+#tickets .hexagon.now {background-color: #FED007;  }
+#tickets .hexagon.now:hover .icon-buy  { fill: #ac9108; -webkit-transition: all .3s ease;}
+.icon-buy, .icon-soldout { fill: #1A2024; width: 120px; height: 145px; margin-top: -20px;}
+.icon-buy { fill: #1A2024;}
+.icon-soldout { fill: #ac9108;}
+
 
 /*ABOUT*/
 #about .title-section, #sponsor .title-section { text-transform: uppercase; color: #fff; font-size: 16px; letter-spacing: 1px; padding: 10px 0; position: absolute; margin-top: 50px;}
