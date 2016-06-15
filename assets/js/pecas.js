@@ -51,8 +51,15 @@ $(document).ready(function(){
   });
 
   $(".menu nav a").click(function(evn){
+    var el = this;
     evn.preventDefault();
-    $('html,body').scrollTo(this.hash, this.hash);
+    $('html,body').scrollTo(el.hash, el.hash, {
+      animation: {
+        complete: function(){
+          location.hash = el.hash;
+        }
+      }
+    });
   });
 
   var aChildren = $(".menu nav li").children(); // find the a children of the list items
