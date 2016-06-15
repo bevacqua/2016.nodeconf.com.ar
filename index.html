@@ -67,6 +67,7 @@
         <ul>
           <li><a href="#home">home</a></li>
           <li><a href="#about">about</a></li>
+          <li><a href="#tickets">tickets</a></li>
           <li><a href="#speakers">speakers</a></li>
           <li><a href="#venue">venue</a></li>
           <li><a href="#sponsor">sponsors</a></li>
@@ -123,6 +124,60 @@
       </div>
     </div>
   </section>
+  <section id="tickets" class="dark-theme">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Tickets</h1>
+        </div>
+        <div class="col-md-3"><button type="button" data-toggle="modal" data-target="#buyModal">
+          <div class="hexagon now">
+            <svg class="icon-buy">
+              <use xlink:href="images/buy.svg#buy"></use>
+            </svg>
+            <div class="hexa-out"></div>
+            <div class="hexa-in"></div>
+          </div>
+          Genesis Block</button></div>
+          <div class="col-md-3">
+            <div class="hexagon soon">TBA
+              <div class="hexa-out"></div>
+              <div class="hexa-in"></div>
+            </div>
+          </div>
+            <div class="col-md-3">
+              <div class="hexagon soon">TBA
+                <div class="hexa-out"></div>
+                <div class="hexa-in"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="hexagon soon">TBA
+                <div class="hexa-out"></div>
+                <div class="hexa-in"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Genesis Block</h4>
+            </div>
+            <div class="modal-body">
+              <tito-widget event="nodeconfar/2016"></tito-widget>
+              <script src='https://js.tito.io/v1' async></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
   <section id="speakers" class="dark-theme">
     <div class="container">
       <div class="row">
