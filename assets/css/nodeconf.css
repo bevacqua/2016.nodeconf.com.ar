@@ -190,8 +190,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 .icon-buy, .icon-soldout { fill: #1A2024; width: 120px; height: 145px; margin-top: -20px;}
 .icon-buy { fill: #1A2024;}
 .icon-soldout { fill: #ac9108;}
-.tito-ticket-description {padding: 10px 30px;}
-input.tito-ticket-quantity-field {color: #1A2024; }
+.tito-ticket-description {padding: 10px 30px!important;}
+input.tito-ticket-quantity-field {color: #1A2024!important; }
 
 /*ABOUT*/
 #about .title-section, #sponsor .title-section { text-transform: uppercase; color: #fff; font-size: 16px; letter-spacing: 1px; padding: 10px 0; position: absolute; margin-top: 50px;}
