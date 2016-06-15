@@ -2847,7 +2847,6 @@ text-decoration: none;
 cursor: not-allowed;
 background-color: transparent;
 background-image: none;
-filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .open > .dropdown-menu {
 display: block;
@@ -5108,18 +5107,13 @@ float: right;
 font-size: 21px;
 font-weight: normal;
 line-height: 1;
-color: #1A2024;
-text-shadow: 0 1px 0 #fff;
-filter: alpha(opacity=20);
-opacity: .2;
+color: #fff;
 }
 .close:hover,
 .close:focus {
-color: #1A2024;
+color: #FED007;
 text-decoration: none;
 cursor: pointer;
-filter: alpha(opacity=50);
-opacity: .5;
 }
 button.close {
 -webkit-appearance: none;
@@ -5169,7 +5163,7 @@ margin: 10px;
 }
 .modal-content {
 position: relative;
-background-color: #fff;
+background-color: #1A2024;
 -webkit-background-clip: padding-box;
         background-clip: padding-box;
 border: 1px solid #999;
@@ -5198,7 +5192,9 @@ opacity: .5;
 }
 .modal-header {
 padding: 15px;
-border-bottom: 1px solid #e5e5e5;
+border-bottom: 1px solid #0f161a;
+text-align: center;
+color: #FED007;
 }
 .modal-header .close {
 margin-top: -2px;
@@ -5210,7 +5206,10 @@ line-height: 1.42857143;
 .modal-body {
 position: relative;
 padding: 15px;
+text-align: center;
+color: #fff;
 }
+.modal-body a {color: #FED007;}
 .modal-footer {
 padding: 15px;
 text-align: right;
@@ -5599,7 +5598,6 @@ background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0,
 background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
 background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
 background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 background-repeat: repeat-x;
 }
 .carousel-control.right {
@@ -5609,7 +5607,6 @@ background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0,
 background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
 background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
 background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 background-repeat: repeat-x;
 }
 .carousel-control:hover,

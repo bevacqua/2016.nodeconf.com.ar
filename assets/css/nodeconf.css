@@ -94,7 +94,7 @@
 .lte8 .back-home:hover .tooltip{display:block}
 /*MENU*/
 .menu_bar {display: none;}
-header {position: fixed; right: 50px; top:60%; z-index: 100; -webkit-transform-origin: bottom right; transform-origin: bottom right; -webkit-transform: translateX(0) rotate(90deg); transform: translateX(0) rotate(90deg);}
+header {position: fixed; right: 50px; top:70%; z-index: 100; -webkit-transform-origin: bottom right; transform-origin: bottom right; -webkit-transform: translateX(0) rotate(90deg); transform: translateX(0) rotate(90deg);}
 header nav{text-transform:uppercase;font-size:16px;}
 header nav ul{padding:0;}
 header nav ul li a, header nav ul li a:focus {height:40px;line-height:40px;padding:0 12px; display:block; color: #495056;}
@@ -152,13 +152,17 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 .bullet:before {content: "•"; display: inline-block; margin-right: 10px; color:#a5ba39; }
 
 /*SPEAKERS*/
-#speakers .col-md-3 {text-align: center; font-size: 24px; margin-bottom: 40px;}
-#speakers .col-md-3 a {color:#BADE09; }
+#speakers .col-md-3, #tickets .col-md-3 {text-align: center; font-size: 24px; margin-bottom: 40px;}
+#speakers .col-md-3 a, #tickets .col-md-3 p {color:#BADE09; }
 #speakers .col-md-3 a:hover {color: #FED007;}
 .hexagon.soon {background-color: #0f161a; margin-bottom: 150px;}
+#tickets .hexagon.now {background-color: #FED007;}
+.icon-buy, .icon-soldout { fill: #1A2024; width: 120px; height: 145px; margin-top: -20px;}
+.icon-buy { fill: #1A2024;}
+.icon-soldout { fill: #ac9108;}
 .hexagon.now {cursor:pointer; }
-.hexagon.now:hover:after, #speakers .col-md-3 a:hover .hexagon.now:after {opacity: 1;}
-.hexagon.now:after, #speakers .col-md-3 a .hexagon.now:after {content: url(../../images/see-more.svg); opacity: 0; text-align: right; width: 100%; height: 100%; display: block; position: absolute; bottom: -92px; right: 14px; color: #f1f1f1; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+#speakers .hexagon.now:hover:after, #speakers .col-md-3 a:hover .hexagon.now:after {opacity: 1;}
+#speakers .hexagon.now:after, #speakers .col-md-3 a .hexagon.now:after {content: url(../../images/see-more.svg); opacity: 0; text-align: right; width: 100%; height: 100%; display: block; position: absolute; bottom: -92px; right: 14px; color: #f1f1f1; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
 .hexagon {position:relative; margin:100px auto 70px; width:190px; height:110px; background-position:center center; background-size: 100%; z-index:1; line-height:110px; text-align:center; font-size:20px; letter-spacing:2px; color:#BADE09; text-transform: uppercase}
 .hexagon .hexa-out, .hexagon .hexa-in {position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; background:inherit; z-index:-1; backface-visibility:hidden}
 .hexagon .hexa-out:before, .hexagon .hexa-in:before{content:'';position:absolute; width:220px; height:220px; background:inherit}
