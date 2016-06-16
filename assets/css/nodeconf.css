@@ -931,6 +931,7 @@ footer a {
   #bodymovin {
     padding-top : 200px;
   }
+  header {top: 55%;}
 }
 @media (min-width:993px) and (max-width:1170px) {
   .iso_color, .iso_black {
