@@ -268,3 +268,18 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #bbdc2f;
 }
+.tito-ticket-name { display: none; }
+.tito-ticket-quantity-field { color: #1a2024; padding: 8px; margin-left: 8px; }
+.tito-ticket-description { text-align: left; }
+.tito-ticket { margin: 0; }
+.tito-ticket-price-quantity { margin: 20px 0; }
+.tito-ticket-price { font-size: 36px; }
+.tito-ticket-vat { font-size: 12px; font-style: italic; text-transform: lowercase; }
+.tito-ticket-price, .tito-ticket-quantity { display: inline-block; vertical-align: middle; }
+.tito-badge-link { display: none; }
+.tito-submit { padding: 10px; background-color: #f8cf1c; color: #1a2024; font-size: 20px; transition: background-color 0.07s ease-in-out; }
+.tito-submit:after { content: '!'; }
+.tito-submit:hover { background-color: #bbdc2f; }
+.tito-ticket-list { margin-bottom: 0; }
+.tito-tickets-unavailable p:first-child { margin-top: 0; }
+.tito-tickets-unavailable p:last-child { margin-bottom: 0; }
