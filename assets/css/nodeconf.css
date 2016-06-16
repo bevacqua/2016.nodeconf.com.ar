@@ -444,7 +444,7 @@ header nav ul li {
   margin-left : 10px;
 }
 .bullet:before {
-  content : "â€¢";
+  content : "\25CF";
   display : inline-block;
   margin-right : 10px;
   color : #a5ba39;
