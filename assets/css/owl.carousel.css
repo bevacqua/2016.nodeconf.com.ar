@@ -283,3 +283,89 @@
 .tito-ticket-list { margin-bottom: 0; }
 .tito-tickets-unavailable p:first-child { margin-top: 0; }
 .tito-tickets-unavailable p:last-child { margin-bottom: 0; }
+
+.buy-now {
+  position: absolute;
+  left: 50%;
+  margin-top: -31px;
+  margin-left: -80px;
+  width: 160px;
+  padding: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.07s ease-in-out;
+  background-color: #f8cf1c;
+  color: #1a2024;
+}
+.buy-now:before,
+.buy-now:after {
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 35px 0 35px;
+  border-color: #f8cf1c transparent transparent transparent;
+  content: '';
+}
+.buy-now:after { left: 30px; margin-top: -25px; }
+.buy-now:before { left: 50px; margin-top: -20px; }
+
+.buy-now:hover {
+  animation: pulsating-buy-now 0.20s alternate infinite;
+}
+.buy-now:hover:before,
+.buy-now:hover:after {
+  animation: pulsating-buy-now-pseudo 0.20s alternate infinite;
+}
+.buy-now-text {
+  text-align: center;
+}
+@-webkit-keyframes pulsating-buy-now {
+  0% {
+    background-color: #f8cf1c;
+  }
+  33% {
+    background-color: #f1f1f1;
+    color: #bbdc2f;
+  }
+  100% {
+    background-color: #bbdc2f;
+  }
+}
+@keyframes pulsating-buy-now {
+  0% {
+    background-color: #f8cf1c;
+  }
+  33% {
+    background-color: #f1f1f1;
+    color: #bbdc2f;
+  }
+  100% {
+    background-color: #bbdc2f;
+  }
+}
+@-webkit-keyframes pulsating-buy-now-pseudo {
+  0% {
+    border-top-color: #f8cf1c;
+  }
+  33% {
+    border-top-color: #f1f1f1;
+    color: #f8cf1c;
+  }
+  100% {
+    border-top-color: #bbdc2f;
+  }
+}
+@keyframes pulsating-buy-now-pseudo {
+  0% {
+    border-top-color: #f8cf1c;
+  }
+  33% {
+    border-top-color: #f1f1f1;
+    color: #f8cf1c;
+  }
+  100% {
+    border-top-color: #bbdc2f;
+  }
+}

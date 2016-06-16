@@ -50,7 +50,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".menu nav a").click(function(evn){
+  $(".menu nav a, .buy-now").click(function(evn){
     var el = this;
     evn.preventDefault();
     $('html,body').scrollTo(el.hash, el.hash, {
