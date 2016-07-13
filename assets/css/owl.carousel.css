@@ -289,37 +289,45 @@
   left: 50%;
   margin-top: -31px;
   margin-left: -80px;
-  width: 160px;
-  padding: 20px;
+  width: 155px;
+  padding: 15px;
   z-index: 1000;
   cursor: pointer;
   transition: background-color 0.07s ease-in-out;
   background-color: #f8cf1c;
   color: #1a2024;
+  text-align: center;
+  border-radius: 50px;
+  animation: bounce 3s infinite;
 }
-.buy-now:before,
-.buy-now:after {
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform : translateY(0);
+  }
+  40% {
+    transform : translateY(-15px);
+  }
+  60% {
+    transform : translateY(-5px);
+  }
+}
+.buy-now:before {
   position: absolute;
   top: 100%;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 35px 35px 0 35px;
+  border-width: 15px 15px 0 15px;
   border-color: #f8cf1c transparent transparent transparent;
   content: '';
 }
-.buy-now:after { left: 30px; margin-top: -25px; }
-.buy-now:before { left: 50px; margin-top: -20px; }
+.buy-now:before { left: 65px; margin-top: -5px; }
 
 .buy-now:hover {
   animation: pulsating-buy-now 0.20s alternate infinite;
 }
-.buy-now:hover:before,
-.buy-now:hover:after {
+.buy-now:hover:before {
   animation: pulsating-buy-now-pseudo 0.20s alternate infinite;
-}
-.buy-now-text {
-  text-align: center;
 }
 @-webkit-keyframes pulsating-buy-now {
   0% {
