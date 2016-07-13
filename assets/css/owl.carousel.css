@@ -324,10 +324,10 @@
 .buy-now:before { left: 65px; margin-top: -5px; }
 
 .buy-now:hover {
-  animation: pulsating-buy-now 0.20s alternate infinite;
+  animation: pulsating-buy-now 0.70s alternate infinite;
 }
 .buy-now:hover:before {
-  animation: pulsating-buy-now-pseudo 0.20s alternate infinite;
+  animation: pulsating-buy-now-pseudo 0.70s alternate infinite;
 }
 @-webkit-keyframes pulsating-buy-now {
   0% {
