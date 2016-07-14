@@ -686,6 +686,12 @@ a.btn-action {
 #sponsor a.btn-action:hover {
   background-color : #f8cf1c;
 }
+#sponsor .container {padding-top: 100px;}
+.tier {margin: 0 auto; text-align: center; display: block;}
+.tier li {display: inline-block; border: solid 1px #37444D; margin:15px;}
+.tier.t-diez li, .tier.t-diez li img {width: 320px; height: 137px; vertical-align: top;}
+.tier.t-cinco li, .tier.t-cinco li img {width: 295px; height: 110px; vertical-align: top;}
+.tier.t-dos li, .tier.t-dos li img {width: 212px; height: 83px; vertical-align: top;}
 a.btn-action:after, .mc-submit:after {
   content : "\e905";
   font-family : 'icomoon';
@@ -706,7 +712,7 @@ a.btn-action:hover:after {
 #bodymovin {
   height : 100%;
   width : 100%;
-  padding-top : 275px;
+  padding-top : 175px;
   overflow : hidden;
 }
 #animated-speaker #bodymovin {
@@ -889,12 +895,17 @@ footer a {
   clip : rect(0,900px,0,0);
   animation : noise-anim-2 3s linear infinite alternate-reverse;
 }
+@media (min-width:2010px) and (max-width:5200px) {
+  .iso_color, .iso_black {
+    background-position : 72% 100px;
+  }
+}
 @media (min-width:1500px) and (max-width:2000px) {
   .iso_color, .iso_black {
     background-position : 75% 100px;
   }
   #bodymovin {
-    padding-top : 200px;
+    padding-top : 100px;
   }
   header {top: 55%;}
 }
@@ -996,6 +1007,7 @@ footer a {
   }
 }
 @media (min-width:300px) and (max-width:480px) {
+  .tier li {margin: 15px 0;}
   #sponsor h2 {
     margin-top : 170px;
   }
