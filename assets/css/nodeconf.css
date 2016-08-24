@@ -688,11 +688,11 @@ a.btn-action {
 }
 #sponsor .container {padding-top: 100px;}
 .tier {margin: 0 auto; text-align: center; display: block;}
-.tier li {display: inline-block; border: solid 1px #37444D; margin:15px; }
+.tier li {display: inline-block; border: solid 1px #37444D; margin:10px; }
 .tier li a{opacity: 1; -webkit-transition: all .3s ease;}
 .tier li a:hover {opacity: .5}
-.tier.t-diez li, .tier.t-diez li img {width: 320px; height: 137px; vertical-align: top;}
-.tier.t-cinco li, .tier.t-cinco li img {width: 295px; height: 110px; vertical-align: top;}
+.tier.t-diez li, .tier.t-diez li img {width: 355px; height: 156px; vertical-align: top;}
+.tier.t-cinco li, .tier.t-cinco li img {width: 291px; height: 110px; vertical-align: top;}
 .tier.t-dos li, .tier.t-dos li img {width: 212px; height: 83px; vertical-align: top;}
 a.btn-action:after, .mc-submit:after {
   content : "\e905";
