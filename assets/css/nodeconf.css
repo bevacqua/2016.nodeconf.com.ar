@@ -530,8 +530,8 @@ header nav ul li {
   width : 100%;
 }
 .profile-s h2 {
-  font-size : 60px;
-  line-height : 60px;
+  font-size : 56px;
+  line-height : 56px;
   margin-bottom : 0;
 }
 .profile-text a {
@@ -544,7 +544,7 @@ header nav ul li {
   color : #FED007;
 }
 .profile-s p, a.in-prof, .plain-header p {
-  font-size : 20px;
+  font-size : 18px;
   margin-bottom : 0;
 }
 .profile-img {
@@ -912,9 +912,9 @@ footer a {
   header {top: 55%;}
 }
 @media (min-width:993px) and (max-width:1170px) {
-  .iso_color, .iso_black {
-    background-position : 87% 100px;
-  }
+  .iso_color, .iso_black { background-position : 87% 100px;}
+  #profile-speaker .bottom {border-width: 0 100vw 800px 0;}
+  .tres {top:450px}
 }
 @media screen and (max-width:992px) {
   .iso_color {
