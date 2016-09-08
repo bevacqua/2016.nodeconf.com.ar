@@ -540,6 +540,7 @@ header nav ul li {
 .profile-text p {
   margin-top : 40px;
 }
+.profile-text strong, .profile-text em {color: #666;}
 .profile-s a:hover {
   color : #FED007;
 }
