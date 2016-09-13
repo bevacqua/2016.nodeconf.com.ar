@@ -461,7 +461,7 @@ header nav ul li {
   color : #FED007;
 }
 .hexagon.soon {
-  background-color : #0f161a;
+  background-color : #14181b;
 }
 .hexagon.now {
   cursor : pointer;
@@ -688,13 +688,16 @@ a.btn-action {
   background-color : #f8cf1c;
 }
 #sponsor .container {padding-top: 100px;}
+.tier.t-uno {margin: 70px auto 0px; padding-top: 30px; border-top: 1px solid #000;}
 .tier {margin: 0 auto; text-align: center; display: block;}
-.tier li {display: inline-block; border: solid 1px #37444D; margin:10px; }
+.tier li {display: inline-block; background-color: #14181b; margin:10px; }
 .tier li a{opacity: 1; -webkit-transition: all .3s ease;}
 .tier li a:hover {opacity: .5}
 .tier.t-diez li, .tier.t-diez li img {width: 355px; height: 156px; vertical-align: top;}
 .tier.t-cinco li, .tier.t-cinco li img {width: 291px; height: 110px; vertical-align: top;}
 .tier.t-dos li, .tier.t-dos li img {width: 212px; height: 83px; vertical-align: top;}
+.tier.t-uno li, .tier.t-uno li img {width: auto; height: 50px; vertical-align: top; background-color: transparent;}
+.tier.t-uno h3 {margin-top: 15px;  text-transform: uppercase; }
 a.btn-action:after, .mc-submit:after {
   content : "\e905";
   font-family : 'icomoon';
