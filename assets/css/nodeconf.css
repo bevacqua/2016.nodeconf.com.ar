@@ -452,14 +452,18 @@ header nav ul li {
 #speakers .col-md-3, #tickets .col-md-3 {
   text-align : center;
   font-size : 24px;
-  margin-bottom : 40px;
 }
+#tickets .col-md-3 {  margin-bottom : 40px;}
+#speakers .col-md-3 {  margin-bottom : 20px; min-height: 330px}
 #speakers .col-md-3 a, #tickets .col-md-3 p {
   color : #BADE09;
 }
 #speakers .col-md-3 a:hover {
   color : #FED007;
 }
+#speakers .col-md-3 a em {font-size: 14px; display: block; opacity: 0; color: #fff; transition: all 0.1s ease;}
+#speakers .col-md-3 p {margin-bottom: 3px;}
+#speakers .col-md-3 a:hover em {opacity: 1;     transition: all 0.5s ease;}
 .hexagon.soon {
   background-color : #14181b;
 }
@@ -485,7 +489,7 @@ header nav ul li {
   color : #f1f1f1;
   transition : all 0.5s ease;
 }
-.hexagon {position:relative; margin:100px auto 70px; width:190px; height:110px; background-position:center center; background-size: 220px; z-index:1; line-height:110px; text-align:center; font-size:20px; letter-spacing:2px; color:#BADE09; text-transform: uppercase}
+.hexagon {position:relative; margin:70px auto; width:190px; height:110px; background-position:center center; background-size: 220px; z-index:1; line-height:110px; text-align:center; font-size:20px; letter-spacing:2px; color:#BADE09; text-transform: uppercase}
 .hexagon .hexa-out, .hexagon .hexa-in {position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; background:inherit; z-index:-1; backface-visibility:hidden}
 .hexagon .hexa-out:before, .hexagon .hexa-in:before{content:'';position:absolute; width:220px; height:220px; background:inherit}
 .hexagon .hexa-out {transform:rotate(60deg)}
