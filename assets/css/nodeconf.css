@@ -510,35 +510,36 @@ header nav ul li {
   margin-left: 10px;
 }
 #profile-speaker {
-  background-color : #f1f1f1;
+  background-color : #1A2024;
+  background: linear-gradient(to right top, #1A2024 50%, #f1f1f1 50%);
+  min-height: 800px;
 }
-#profile-speaker .bottom {
-  height : 100px;
-  border-width : 0 100vw 650px 0;
-  border-style : solid;
-  border-color : transparent transparent #1A2024 #f1f1f1;
-}
+.info-talk {clear: both; color: #f1f1f1; width: 85%; margin: 45px auto;}
+.info-talk h1 {font-size: 26px; padding-bottom: 10px; margin-bottom: 15px; }
+.info-talk a.in-prof {color: #999; font-size: 16px;}
 .profile-s {
   margin : 70px auto 0;
-  width : 80%;
+  width : 85%;
   color : #1A2024;
   position : relative;
+  clear: both;
+  min-height: 300px;
 }
 .profile-s .profile-text {
-  position : absolute;
-  right : 0;
-  width : 100%;
+  padding-left: 50px;
 }
+.profile-talk {min-height: 300px;}
 .profile-s h2 {
-  font-size : 56px;
-  line-height : 56px;
+  font-size : 54px;
+  line-height : 54px;
   margin-bottom : 0;
+  margin-top: 0;
 }
 .profile-text a {
   font-size : 35px;
 }
 .profile-text p {
-  margin-top : 40px;
+  margin-top : 30px;
 }
 .profile-text strong, .profile-text em {color: #666;}
 .profile-s a:hover {
@@ -566,6 +567,7 @@ header nav ul li {
   width : 384px;
   height : 274px;
   left : -30px;
+  top: 10px;
   z-index : 1;
 }
 #conduct .container {
@@ -603,6 +605,10 @@ header nav ul li {
 .dark-theme {
   background : #1A2024;
   color : #fff;
+}
+.light-theme {
+  background : #f1f1f1;
+  color : #1A2024;
 }
 #about .col-md-6 {
   padding-bottom : 50px;
@@ -917,7 +923,6 @@ footer a {
 }
 @media (min-width:993px) and (max-width:1170px) {
   .iso_color, .iso_black { background-position : 87% 100px;}
-  #profile-speaker .bottom {border-width: 0 100vw 800px 0;}
   .tres {top:450px}
 }
 @media screen and (max-width:992px) {
@@ -928,16 +933,17 @@ footer a {
     width : 50%;
     float : left;
   }
+  #profile-speaker {
+    background: #1A2024;
+  }
+
   .profile-s .profile-text {
-    top : 300px;
+    padding-left: 0;
     color : #f1f1f1;
   }
+  .info-talk, .profile-s {width: 100%;}
   .profile-s a {
     color : #f1f1f1;
-  }
-  #profile-speaker .bottom {
-    border-width : 0 100vw 450px 0;
-    margin-bottom : 200px;
   }
   .col-xs-push-1 {
     left : 0;
@@ -984,9 +990,7 @@ footer a {
     top : 325px;
   }
   .tres {
-    top : 630px;
-    opacity : 0.300000011920928955078125;
-    color : #bbdc2f;
+    display: none;
   }
   #conduct .col-md-8 {
     float : none;
@@ -1011,6 +1015,8 @@ footer a {
     border-radius : 32px;
     float : none;
   }
+  .profile-s .profile-text {
+    padding-left: 0;}
 }
 @media (min-width:300px) and (max-width:480px) {
   .tier li {margin: 15px 0;}
@@ -1059,10 +1065,6 @@ footer a {
   }
   .profile-img-trama {
     background-size : 85%;
-  }
-  #profile-speaker .bottom {
-    border-width : 0 100vw 250px 0;
-    margin-bottom : 400px;
   }
   .back-home {
     margin-top : 20px;

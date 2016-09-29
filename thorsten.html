@@ -62,20 +62,27 @@ ga('create', 'UA-35043128-11', 'auto');
 ga('send', 'pageview');
 </script>
 </head>
-<body class="dark-theme">
+<body class="light-theme">
   <section id="profile-speaker">
     <div class="container">
       <a href="index.html" class="back-home"><div class="tooltip">back</div></a>
       <div class="profile-s">
         <div class="icon icon-dots tres glitch" data-text="&#xe903;">&#xe903;</div>
-        <div class="col-md-6"><div class="profile-img"><img src="images/thorsten.jpg"></div><div class="profile-img-trama"></div></div>
-        <div class="col-md-6"><div class="profile-text"><h2>Thorsten Lorenz</h2><a href="http://www.twitter.com/thlorenz" target="_blank">@thlorenz</a><p>A Jazz musician turned developer and is excited about Node.js and its community.
-The fast turnaround from idea to working module has proven addictive for him and led to lots of modules which ended up on github and/or npm</p></div></div>
+        <div class="col-md-5 profile-talk"><div class="profile-img"><img src="images/thorsten.jpg"></div><div class="profile-img-trama"></div></div>
+        <div class="col-md-7"><div class="profile-text"><h2>Thorsten Lorenz</h2><a href="http://www.twitter.com/thlorenz" target="_blank">@thlorenz</a><p>A Jazz musician turned developer and is excited about Node.js and its community.
+The fast turnaround from idea to working module has proven addictive for him and led to lots of modules which ended up on github and/or npm</p>
+</div></div>
       </div>
+      <div class="info-talk">
+        <div class="col-md-6">
+        <h1>Memory Profiling for Mere Mortals</h1>
+        <p>Memory leaks are rare, but when they occur we need to be equipped to track them down. However not many resources exist that explain how to memory profile a Node.js application.
+In this talk I will explain how data is stored in the v8 heap and how to examine it using tools that are readily available on a developer's machine and are relatively easy to learn.</p>
+<p>Additionally I'll show cutting edge features introduced to v8 that ease detection of memory leaks (i.e. memory allocation sampling). We will also discuss how to access these features via the v8 API even before they are exposed via Chrome's developer tools</p>
+      </div></div>
     </div>
-    <div class="bottom"></div>
   </section>
-  <section id="animated-speaker">
+  <section id="animated-speaker" class="dark-theme">
     <div id="bodymovin"></div>
   </section>
   <footer>
