@@ -989,6 +989,7 @@ footer a {
   }
 }
 @media screen and (max-width:768px) {
+  .text-workshop {padding-right: 0;}
   .iso_black {
     background : transparent;
   }
@@ -1037,14 +1038,22 @@ footer a {
   .mc-submit {
     margin : 20px auto;
   }
-  .mc-input, .mc-submit {
+  .mc-submit {
     border-radius : 32px;
     float : none;
+  }
+  .mc-input {
+    float : none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   .profile-s .profile-text {
     padding-left: 0;}
 }
 @media (min-width:300px) and (max-width:480px) {
+  .workshops li  {width: 100%;}
+  .info-workshop {margin: auto;     max-width: 100%}
+  .text-workshop {padding-left: 0; margin-left: 0;  border-left: none;  border-top: solid 1px #000; margin-top: 30px;  min-height: auto;}
   .tier li {margin: 15px 0;}
   #sponsor h2 {
     margin-top : 170px;
@@ -1052,6 +1061,7 @@ footer a {
   #conduct h3 {
     font-size : 30px;
     margin-top : 0;
+    text-align: center;
   }
   .code-conduct {
     padding : 20px 5px;
