@@ -247,7 +247,7 @@ color : #1A2024;
 text-decoration : none;
 }
 a:focus {
-outline : thin dotted;
+outline : 0;
 outline-offset : -2px;
 }
 figure {
@@ -612,9 +612,10 @@ margin-left : auto;
 }
 @media only screen and (min-width:320px) {
 .container {
-width : 320px;
+width : 95%;
 }
 }
+
 @media (min-width:480px) {
 .container {
 width : 470px;

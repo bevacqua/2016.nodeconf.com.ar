@@ -77,7 +77,7 @@
   margin-left : -5px;
   margin-bottom : 0;
 }
-#conduct h3 {
+#conduct h3, #speakers h3 {
   font-size : 45px;
   line-height : 50px;
   margin-top : 50px;
@@ -182,7 +182,7 @@
 header {
   position: fixed;
   right: 50px;
-  top:75%;
+  top:85%;
   z-index: 100;
   -webkit-transform-origin: bottom right;
   transform-origin: bottom right;
@@ -475,6 +475,7 @@ header nav ul li {
   text-align : center;
   font-size : 24px;
 }
+#tickets {padding: 50px 0;}
 #tickets .col-md-3 {  margin-bottom : 40px;}
 #speakers .col-md-3 {  margin-bottom : 20px; min-height: 330px}
 #speakers .col-md-3 a, #tickets .col-md-3 p {
@@ -487,7 +488,7 @@ header nav ul li {
 #speakers .col-md-3 p {margin-bottom: 3px;}
 #speakers .col-md-3 a:hover em {opacity: 1;     transition: all 0.5s ease;}
 .hexagon.soon {
-  background-color : #14181b;
+  background-color : #0f171c;
 }
 .hexagon.now {
   cursor : pointer;
@@ -524,6 +525,7 @@ header nav ul li {
   color : #1A2024;
   text-align : center;
   padding : 50px 0 80px;
+  margin-top: 50px;
 }
 .call-to-action a {
   color : #1A2024;
@@ -670,6 +672,8 @@ h1 {
 .org h1, #venue h1 {
   margin-top : 80px;
 }
+.org h1 a {color: #f1f1f1; text-align: right; font-size: 20px; display: block;}
+.org h1 a:hover {color:#f8cf1c;}
 .organ {
   font-size : 14px;
   padding : 30px 0;
@@ -683,6 +687,44 @@ h1 {
 h4 {
   text-transform : uppercase;
 }
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active:before {
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #f8cf1c transparent transparent transparent;
+  content: '';
+}
+#tabs li:before { left: 50%; margin-top: -5px; margin-left: -15px;}
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {cursor: pointer; background-color: #FED007;  }
+#tabs li:hover {background-color: #FED007; -webkit-transition: all .2s ease;}
+#tabs { width: 100%; max-width: 920px; margin: auto; clear: both;}
+#tabs ul { margin-bottom: 0;background-color: #f1f1f1; }
+#tabs li { padding: 15px 0; position: relative; display: inline-block; width: 50%; text-align: center; font-size: 24px;}
+:focus {outline: 0; border: none;}
+#tabs li a {display: block;}
+#schedule table {overflow: hidden; width: 100%;}
+#schedule table thead {background-color: #262d31; color: #f1f1f1; text-transform: uppercase;}
+#schedule .twitter a {color: #fff;}
+#schedule .twitter a:hover {color: #FED007;}
+#schedule table tbody td.title:after {content : "\e905"; font-family: 'icomoon'; color: transparent; font-size: 10px; position: absolute; right: 10px; top: 49%; margin-top: -7px;}
+#schedule table tbody tr:hover td.title:after {color: #FED007;}
+#schedule table tbody tr:hover {background-color: #262d31; -webkit-transition: all .2s ease; }
+#schedule table tbody {background-color: #1A2024;}
+#schedule td, #schedule th {padding: 10px 15px; vertical-align: middle;}
+#schedule th, #schedule th.time {padding: 20px 15px 10px; min-width: 100px;}
+#schedule th.title {padding: 20px 5px 10px 30px;}
+#schedule td {border-top: solid 1px #0f171c; }
+#schedule tr:hover {cursor: pointer;}
+#schedule tr.debate, #schedule tbody tr.debate:hover {background-color: #FED007; color: #1A2024;  text-transform: uppercase;}
+#schedule tr.break, #schedule tbody tr.break:hover {background-color: #0f171c; text-transform: uppercase; color: #5f6366}
+#schedule td.time{padding: 10px; min-width: 110px;}
+#schedule td.speaker { color: #FED007;}
+/*#schedule tr.break td, #schedule .title, #schedule th.speaker {text-align: center;}*/
+#schedule td.title {padding: 10px 30px; position: relative; text-transform: uppercase;}
+#schedule .break td
 #map {
   width : 100%;
   height : 400px;
@@ -722,7 +764,7 @@ a.btn-action {
 #sponsor .container {padding-top: 100px;}
 .tier.t-uno {margin: 70px auto 0px; padding-top: 30px; border-top: 1px solid #000;}
 .tier {margin: 0 auto; text-align: center; display: block;}
-.tier li {display: inline-block; background-color: #14181b; margin:10px; }
+.tier li {display: inline-block; background-color: #0f171c; margin:10px; }
 .tier li a{opacity: 1; -webkit-transition: all .3s ease;}
 .tier li a:hover {opacity: .5}
 .tier.t-diez li, .tier.t-diez li img {width: 355px; height: 156px; vertical-align: top;}
@@ -938,14 +980,14 @@ footer a {
     background-position : 72% 100px;
   }
 }
-@media (min-width:1500px) and (max-width:2000px) {
+@media (min-width:1500px) and (max-width:2500px) {
   .iso_color, .iso_black {
     background-position : 75% 100px;
   }
   #bodymovin {
     padding-top : 100px;
   }
-  header {top: 55%;}
+  header {top: 75%;}
 }
 @media (min-width:993px) and (max-width:1170px) {
   .iso_color, .iso_black { background-position : 87% 100px;}
@@ -989,6 +1031,13 @@ footer a {
   }
 }
 @media screen and (max-width:768px) {
+  #tabs {max-width: 100%;}
+  #schedule td.time {min-width: 70px; padding: 10px 0 10px 5px; width: 27%; font-size: 12px;}
+  #schedule thead, #schedule .twitter {display: none;}
+  #schedule td.speaker, #schedule td.title {display: block; width: 100%; text-align: left;}
+  #schedule td.title {border-top: none; font-size: 14px; padding: 0 0 5px 0;}
+  #schedule td {padding: 5px 0;}
+  #schedule table tbody td.title:hover:after {color: transparent;}
   .text-workshop {padding-right: 0;}
   .iso_black {
     background : transparent;
@@ -1058,7 +1107,7 @@ footer a {
   #sponsor h2 {
     margin-top : 170px;
   }
-  #conduct h3 {
+  #conduct h3, #speakers h3 {
     font-size : 30px;
     margin-top : 0;
     text-align: center;
