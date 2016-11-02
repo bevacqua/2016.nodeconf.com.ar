@@ -717,6 +717,7 @@ h4 {
 #schedule th, #schedule th.time {padding: 20px 15px 10px; min-width: 100px;}
 #schedule th.title {padding: 20px 5px 10px 30px;}
 #schedule td {border-top: solid 1px #0f171c; }
+#schedule tr:hover {cursor: pointer;}
 #schedule tr.debate, #schedule tbody tr.debate:hover {background-color: #FED007; color: #1A2024;  text-transform: uppercase;}
 #schedule tr.break, #schedule tbody tr.break:hover {background-color: #0f171c; text-transform: uppercase; color: #5f6366}
 #schedule td.time{padding: 10px; min-width: 110px;}
