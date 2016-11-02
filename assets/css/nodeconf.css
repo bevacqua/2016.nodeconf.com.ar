@@ -697,7 +697,7 @@ h4 {
   border-color: #f8cf1c transparent transparent transparent;
   content: '';
 }
-#tabs li:before { left: 50%; margin-top: -5px; }
+#tabs li:before { left: 50%; margin-top: -5px; margin-left: -15px;}
 .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {cursor: pointer; background-color: #FED007;  }
 #tabs li:hover {background-color: #FED007; -webkit-transition: all .2s ease;}
 #tabs { width: 100%; max-width: 850px; margin: auto; clear: both;}
@@ -716,14 +716,15 @@ h4 {
 #schedule table tbody {background-color: #1A2024;}
 #schedule td, #schedule th {padding: 10px 5px; vertical-align: middle;}
 #schedule th, #schedule th.time {padding: 20px 5px 10px; min-width: 100px;}
+#schedule th.title {padding: 20px 5px 10px 30px;}
 #schedule td {border-top: solid 1px #0f171c; }
-#schedule tr.debate, #schedule tbody tr.debate:hover {background-color: #BADE09; color: #1A2024; }
-#schedule tr.break, #schedule tbody tr.break:hover {background-color: #0f171c;}
+#schedule tr.debate, #schedule tbody tr.debate:hover {background-color: #FED007; color: #1A2024;  text-transform: uppercase;}
+#schedule tr.break, #schedule tbody tr.break:hover {background-color: #0f171c; text-transform: uppercase; color: #5f6366}
 #schedule td.time{padding: 10px 5px; min-width: 100px;}
-#schedule td.speaker {text-align: right; color: #FED007;}
-#schedule tr.break td, #schedule .title, #schedule th.speaker {text-align: center;}
-#schedule tr.break td.time {text-align: left;}
-#schedule td.title {padding: 10px 30px; position: relative;}
+#schedule td.speaker { color: #FED007;}
+/*#schedule tr.break td, #schedule .title, #schedule th.speaker {text-align: center;}*/
+#schedule tr.break td.time {text-align: center;}
+#schedule td.title {padding: 10px 30px; position: relative; text-transform: uppercase;}
 #schedule .break td
 #map {
   width : 100%;
