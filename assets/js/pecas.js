@@ -129,7 +129,6 @@ $(function() {
       });
       $('.bt-menu').removeClass("active");
     }
-
   });
 });
 
