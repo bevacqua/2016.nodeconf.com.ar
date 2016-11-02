@@ -53,6 +53,13 @@ oMMmyyyyyyyyNMM/           +MMN.       `MMMyyyyso/.         dMMmhhhhhhy     mMMm
 <link rel="stylesheet" type="text/css" href="assets/css/nodeconf.css" />
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" ></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript" ></script>
 <script src="assets/js/pecas.js" type="text/javascript" ></script>
 <script src="assets/js/owl.carousel.js"></script>
@@ -74,12 +81,13 @@ ga('send', 'pageview');
 <div id="nav-anchor"></div>
 <nav>
 <ul>
-<li><a href="#home">home</a></li>
-<li><a href="#about">about</a></li>
-<li><a href="#tickets">tickets</a></li>
-<li><a href="#speakers">speakers</a></li>
-<li><a href="#venue">venue</a></li>
-<li><a href="#sponsor">sponsors</a></li>
+<li class="here"><a href="#home">home</a></li>
+<li class="here"><a href="#about">about</a></li>
+<li class="here"><a href="#schedule">schedule</a></li>
+<li><a href="speakers.html">speakers</a></li>
+<li class="here"><a href="#tickets">tickets</a></li>
+<li class="here"><a href="#venue">venue</a></li>
+<li class="here"><a href="#sponsor">sponsors</a></li>
 </ul>
 </nav>
 </div>
@@ -135,6 +143,202 @@ GET YOUR TICKET!
 <div class="col-md-5"> </div>
 </div>
 </div>
+</section>
+
+<section id="schedule" class="dark-theme">
+<div class="container">
+  <div class="col-md-12">
+  <h1>Schedule</h1>
+  </div>
+<div id="tabs">
+<ul><li><a href="#dia1">18 Nov</a></li><li><a href="#dia2">19 Nov </a></li></ul>
+<div id="dia1">
+  <table>
+    <thead>
+      <tr>
+        <th class="time">Dia 1</th>
+        <th class="speaker" colspan="2">Speaker</th>
+        <th class="title">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="break">
+        <td class="time">08:00</td>
+        <td colspan="3">Registration</td>
+      </tr>
+      <tr class="break">
+        <td class="time">8:30 - 9:30</td>
+        <td colspan="3">Breakfast</td>
+      </tr>
+      <tr onclick="location.href='hugh.html'">
+        <td class="time">9:30 - 10:00</td>
+        <td class="speaker">Hugh Kennedy</td>
+        <td class="twitter"><a href="https://www.twitter.com/hughskennedy" target="_blank" class="twitter-handle">@hughskennedy</a></td>
+        <td class="title">JavaScript and Interactive Installations</td>
+      </tr>
+      <tr onclick="location.href='bynens.html'">
+        <td class="time">10:00 - 10:30</td>
+        <td class="speaker">Mathias Bynens</td>
+        <td class="twitter"><a href="https://www.twitter.com/mathias" target="_blank" class="twitter-handle">@mathias</a></td>
+        <td class="title">RegExp.prototype.unicode</td>
+      </tr>
+      <tr onclick="location.href='matthew.html'">
+        <td class="time">10:30 - 11:00</td>
+        <td class="speaker">Matthew Podwysocki</td>
+        <td class="twitter"><a href="https://www.twitter.com/mattpodwysocki" target="_blank" class="twitter-handle">@mattpodwysocki</a></td>
+        <td class="title">The Future of Asynchronous JavaScript</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Coffee Break</td>
+      </tr>
+      <tr onclick="location.href='pino.html'">
+        <td class="time">11:45 - 12:15</td>
+        <td class="speaker">Raul Pino</td>
+        <td class="twitter"><a href="https://www.twitter.com/p1nox" target="_blank" class="twitter-handle">@p1nox</a></td>
+        <td class="title">Ethereum for node.js devs</td>
+      </tr>
+      <tr onclick="location.href='erich.html'">
+        <td class="time">12:15 - 12:45</td>
+        <td class="speaker">Erich Oliveira</td>
+        <td class="twitter"><a href="https://www.twitter.com/oliveira_erich" target="_blank" class="twitter-handle">@oliveira_erich</a></td>
+        <td class="title">Nodejs microservices. From Zero to Hero</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Lunch</td>
+      </tr>
+      <tr onclick="location.href='yenkel.html'">
+        <td class="time">14:00 - 14:30</td>
+        <td class="speaker">Damian Schenkelman</td>
+        <td class="twitter"><a href="https://www.twitter.com/dschenkelman" target="_blank" class="twitter-handle">@dschenkelman</a></td>
+        <td class="title">The dirty secrets of building large, highly available, scalable HTTP APIs</td>
+      </tr>
+      <tr onclick="location.href='sharon.html'">
+        <td class="time">14:30 - 15:00</td>
+        <td class="speaker">Sharon Steed</td>
+        <td class="twitter"><a href="https://www.twitter.com/sharonsteed" target="_blank" class="twitter-handle">@sharonsteed</a></td>
+        <td class="title">Avoiding release paralysis</td>
+      </tr>
+      <tr onclick="location.href='thorsten.html'">
+        <td class="time">15:00 - 15:30</td>
+        <td class="speaker">Thorsten Lorenz</td>
+        <td class="twitter"><a href="https://www.twitter.com/thlorenz" target="_blank" class="twitter-handle">@thlorenz</a></td>
+        <td class="title">Memory Profiling for Mere Mortals</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Coffee Break</td>
+      </tr>
+      <tr onclick="location.href='anton.html'">
+        <td class="time">16:15 - 16:45</td>
+        <td class="speaker">Anton McConville</td>
+        <td class="twitter"><a href="https://www.twitter.com/antonmc" target="_blank" class="twitter-handle">@antonmc</a></td>
+        <td class="title">Presence, Personality & Pulse - Enlivening Experiences With Ambient Data</td>
+      </tr>
+      <tr onclick="location.href='rauch.html'">
+        <td class="time">16:45 - 17:15</td>
+        <td class="speaker">Guillermo Rauch</td>
+        <td class="twitter"><a href="https://www.twitter.com/rauchg" target="_blank" class="twitter-handle">@rauchg</a></td>
+        <td class="title">TBD</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">After</td>
+      </tr>
+      </tbody>
+  </table>
+
+</div>
+<div id="dia2">
+  <table>
+    <thead>
+      <tr>
+        <th class="time">Dia 2</th>
+        <th class="speaker" colspan="2">Speaker</th>
+        <th class="title">Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="location.href='tracy.html'">
+        <td class="time">9:30 - 10:00</td>
+        <td class="speaker">Tracy Osborn</td>
+        <td class="twitter"><a href="https://www.twitter.com/limedaring" target="_blank" class="twitter-handle">@limedaring</a></td>
+        <td class="title">On Writing Friendly and Welcoming Documentation</td>
+      </tr>
+      <tr onclick="location.href='feross.html'">
+        <td class="time">10:00 - 10:30</td>
+        <td class="speaker">Feross Aboukhadijeh</td>
+        <td class="twitter"><a href="https://www.twitter.com/feross" target="_blank" class="twitter-handle">@feross</a></td>
+        <td class="title">Real world Electron: Building Cross-platform desktop apps with JavaScript</td>
+      </tr>
+      <tr onclick="location.href='stephan.html'">
+        <td class="time">10:30 - 11:00</td>
+        <td class="speaker">Stephan Bönnemann</td>
+        <td class="twitter"><a href="https://www.twitter.com/boennemann" target="_blank" class="twitter-handle">@boennemann</a></td>
+        <td class="title">The Future of Asynchronous JavaScript</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Coffee Break</td>
+      </tr>
+      <tr onclick="location.href='mathias.html'">
+        <td class="time">11:45 - 12:15</td>
+        <td class="speaker">Mathias Buus</td>
+        <td class="twitter"><a href="https://www.twitter.com/mafintosh" target="_blank" class="twitter-handle">@mafintosh</a></td>
+        <td class="title">Internet of Peers</td>
+      </tr>
+      <tr class="debate">
+        <td class="time">12:15 - 13:15</td>
+        <td class="title" colspan="3">Debate Panel</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Lunch</td>
+      </tr>
+      <tr onclick="location.href='adam.html'">
+        <td class="time">14:45 - 15:15</td>
+        <td class="speaker">Adam Baldwin</td>
+        <td class="twitter"><a href="https://www.twitter.com/adam_baldwin" target="_blank" class="twitter-handle">@adam_baldwin</a></td>
+        <td class="title">Continuous Security</td>
+      </tr>
+      <tr onclick="location.href='felix.html'">
+        <td class="time">15:15 - 15:45</td>
+        <td class="speaker">Felix Rieseberg</td>
+        <td class="twitter"><a href="https://www.twitter.com/felixrieseberg" target="_blank" class="twitter-handle">@felixrieseberg</a></td>
+        <td class="title">Node on the Desktop: Building Apps with Electron v1</td>
+      </tr>
+      <tr onclick="location.href='paez.html'">
+        <td class="time">15:45 - 16:15</td>
+        <td class="speaker">Diego Paez</td>
+        <td class="twitter"><a href="https://www.twitter.com/carax" target="_blank" class="twitter-handle">@carax</a></td>
+        <td class="title">micro(hapi)ness</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">Coffee Break</td>
+      </tr>
+      <tr onclick="location.href='michael.html'">
+        <td class="time">17:00 - 17:30</td>
+        <td class="speaker">Michael Matuzak</td>
+        <td class="twitter"><a href="https://www.twitter.com/mmatuzak" target="_blank" class="twitter-handle">@mmatuzak</a></td>
+        <td class="title">Hacking your Nintendo with JavaScript</td>
+      </tr>
+      <tr onclick="location.href='substack.html'">
+        <td class="time">16:45 - 17:15</td>
+        <td class="speaker">James Halliday</td>
+        <td class="twitter"><a href="https://www.twitter.com/substack" target="_blank" class="twitter-handle">@substack</a></td>
+        <td class="title">Fun with WebGL</td>
+      </tr>
+      <tr class="break">
+        <td colspan="4">After Party</td>
+      </tr>
+      </tbody>
+  </table>
+
+</div>
+</div>
+</div>
+<div class="call-to-action">
+<div class="container">
+<h2>17 NOVEMBER, 2016 - WORKSHOPS</h2>
+<h4>Centro Cultural San Martin</h4>
+<a href="workshops.html" target="_blank" class="btn-action">see more</a>
+ </div>
+ </div>
 </section>
 <section id="tickets" class="dark-theme">
 <div class="container">
@@ -198,137 +402,6 @@ Callback Hell</button></div>
 </div>
 </div>
 </div>
-
-<section id="speakers" class="dark-theme">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<h1>The Speakers</h1>
-</div>
-<div class="col-md-3"><a href="feross.html">
-<div class="hexagon now" style="background-image:url('images/feross.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Feross Aboukhadijeh</p><em>TBA</em></a></div>
-<div class="col-md-3"><a href="mathias.html">
-<div class="hexagon now" style="background-image:url('images/mathias.png');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Mathias Buus</p><em>TBA</em></a></div>
-<div class="col-md-3"><a href="thorsten.html">
-<div class="hexagon now" style="background-image:url('images/thorsten.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Thorsten Lorenz</p><em>Memory Profiling for Mere Mortals</em></a></div>
-<div class="col-md-3"><a href="sharon.html">
-<div class="hexagon now" style="background-image:url('images/sharon.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Sharon Steed</p><em>Empathetic communication: why vulnerability is the key to collaboration</em></a></div>
-<div class="col-md-3"><a href="bynens.html">
-<div class="hexagon now" style="background-image:url('images/bynens.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Mathias Bynens</p><em>RegExp.prototype.unicode</em></a></div>
-<div class="col-md-3"><a href="erich.html">
-<div class="hexagon now" style="background-image:url('images/erich.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Erich Oliveira</p><em>Nodejs microservices. From Zero to Hero.</em></a></div>
-<div class="col-md-3"><a href="matthew.html">
-<div class="hexagon now" style="background-image:url('images/matthew.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Matthew Podwysocki</p><em>The Future of Asynchronous JavaScript</em></a></div>
-<div class="col-md-3"><a href="pino.html">
-<div class="hexagon now" style="background-image:url('images/pino.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Raul Pino</p><em>Ethereum for node.js devs</em></a></div>
-<div class="col-md-3"><a href="paez.html">
-<div class="hexagon now" style="background-image:url('images/paez.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Diego Paez</p><em>Micro(hapi)ness</em></a></div>
-<div class="col-md-3"><a href="yenkel.html">
-<div class="hexagon now" style="background-image:url('images/yenkel.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Damian Schenkelman</p><em>The dirty secrets of building large, highly available, scalable HTTP APIs</em></a></div>
-<div class="col-md-3"><a href="anton.html">
-<div class="hexagon now" style="background-image:url('images/anton.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Anton McConville</p><em>Presence, Personality & Pulse - Enlivening Experiences With Ambient Data</em></a></div>
-<div class="col-md-3"><a href="adam.html">
-<div class="hexagon now" style="background-image:url('images/adam.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Adam Baldwin</p><em>Continuous Security</em></a></div>
-<div class="col-md-3"><a href="felix.html">
-<div class="hexagon now" style="background-image:url('images/felix.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Felix Rieseberg</p><em>Node on the Desktop: Building Apps with Electron v1</em></a></div>
-<div class="col-md-3"><a href="stephan.html">
-<div class="hexagon now" style="background-image:url('images/stephan.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Stephan Bönnemann</p><em>Kill all humans – Automate npm releases and dependency updates</em></a></div>
-<div class="col-md-3"><a href="michael.html">
-<div class="hexagon now" style="background-image:url('images/michael.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Michael Matuzak</p><em>Hacking your Nintendo with JavaScript</em></a></div>
-<div class="col-md-3"><a href="hugh.html">
-<div class="hexagon now" style="background-image:url('images/hugh.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Hugh Kennedy</p><em>JavaScript and Interactive Installations</em></a></div>
-<div class="col-md-3"><a href="tracy.html">
-<div class="hexagon now" style="background-image:url('images/tracy.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Tracy Osborn</p><em>On Writing Friendly and Welcoming Documentation</em></a></div>
-<div class="col-md-3"><a href="substack.html">
-<div class="hexagon now" style="background-image:url('images/substack.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>James Halliday</p><em>TBA</em></a></div>
-<div class="col-md-3"><a href="rauch.html">
-<div class="hexagon now" style="background-image:url('images/rauch.jpg');">
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-<p>Guillermo Rauch</p><em>TBA</em></a></div>
-</div>
-</div>
-<div class="call-to-action">
-<div class="container">
-<h2>17 NOVEMBER, 2016 - WORKSHOPS</h2>
-<h4>Centro Cultural San Martin</h4>
-<a href="workshops.html" target="_blank" class="btn-action">see more</a>
- </div>
- </div>
-</section>
 <section id="venue" class="dark-theme">
 <div class="container">
 <div class="row">
@@ -349,11 +422,13 @@ Callback Hell</button></div>
 </div>
 <div id="map"></div>
 </section>
+
 <section class="dark-theme">
 <div class="container org">
 <div class="row">
 <div class="col-md-12">
-<h1>The Organizers</h1>
+<h1 class="col-md-6">The Organizers</h1>
+<h1 class="col-md-6"><a href="mailto:hello@nodeconf.com.ar">hello@nodeconf.com.ar</a></h1>
 </div>
 <div class="organ">
 <div class="col-md-3">

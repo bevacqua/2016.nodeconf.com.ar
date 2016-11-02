@@ -50,7 +50,7 @@ $(document).ready(function(){
     }
   });
 
-  $(".menu nav a, .buy-now").click(function(evn){
+  $(".menu nav li.here a, .buy-now").click(function(evn){
     var el = this;
     evn.preventDefault();
     $('html,body').scrollTo(el.hash, el.hash, {
@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
   });
 
-  var aChildren = $(".menu nav li").children(); // find the a children of the list items
+  var aChildren = $(".menu nav li.here").children(); // find the a children of the list items
   var aArray = []; // create the empty aArray
   for (var i=0; i < aChildren.length; i++) {
     var aChild = aChildren[i];
