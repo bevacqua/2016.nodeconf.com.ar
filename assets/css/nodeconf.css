@@ -672,7 +672,7 @@ h1 {
 .org h1, #venue h1 {
   margin-top : 80px;
 }
-.org h1 a {color: #f1f1f1; text-align: right; font-size: 20px; display: block;}
+.org h1 a {color: #f1f1f1; text-align: right; font-size: 20px; display: block; line-height: 39px;}
 .org h1 a:hover {color:#f8cf1c;}
 .organ {
   font-size : 14px;
@@ -703,7 +703,7 @@ h4 {
 #tabs { width: 100%; max-width: 920px; margin: auto; clear: both;}
 #tabs ul { margin-bottom: 0;background-color: #f1f1f1; }
 #tabs li { padding: 15px 0; position: relative; display: inline-block; width: 50%; text-align: center; font-size: 24px;}
-:focus {outline: 0; border: none;}
+#tabs:focus {outline: 0; border: none;}
 #tabs li a {display: block;}
 #schedule table {overflow: hidden; width: 100%;}
 #schedule table thead {background-color: #262d31; color: #f1f1f1; text-transform: uppercase;}
@@ -1150,6 +1150,7 @@ footer a {
   }
   .profile-img-trama {
     background-size : 85%;
+    left: -25px;
   }
   .back-home {
     margin-top : 20px;
