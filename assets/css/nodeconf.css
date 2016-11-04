@@ -697,6 +697,12 @@ h4 {
   border-color: #f8cf1c transparent transparent transparent;
   content: '';
 }
+.workshops #schedule {margin-bottom: 70px;}
+.workshops #schedule a {font-size: 16px;}
+.workshops #schedule td.title {padding: 10px 15px;}
+.workshops #schedule th.title {padding: 20px 5px 10px 15px;}
+.workshops #tabs { width: 100%; max-width: 870px; margin: 0;}
+.workshops #schedule #tabs li a {font-size: 24px; color:#1A2024}
 #tabs li:before { left: 50%; margin-top: -5px; margin-left: -15px;}
 .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {cursor: pointer; background-color: #FED007;  }
 #tabs li:hover {background-color: #FED007; -webkit-transition: all .2s ease;}
@@ -1035,7 +1041,9 @@ footer a {
   #schedule td.time {min-width: 70px; padding: 10px 0 10px 5px; width: 27%; font-size: 12px;}
   #schedule thead, #schedule .twitter {display: none;}
   #schedule td.speaker, #schedule td.title {display: block; width: 100%; text-align: left;}
-  #schedule td.title {border-top: none; font-size: 14px; padding: 0 0 5px 0;}
+  #schedule td.title, .workshops #schedule td.speaker {border-top: none; font-size: 14px; padding: 0 0 5px 0;}
+  .workshops #schedule td.title  {border-top: solid 1px #0f171c; padding: 5px 0 0 0;}
+  #tabs ul {margin-bottom: 20px;}
   #schedule td {padding: 5px 0;}
   #schedule table tbody td.title:hover:after {color: transparent;}
   .text-workshop {padding-right: 0;}

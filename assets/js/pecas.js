@@ -87,6 +87,7 @@ $(function() {
       }
     }
   });
+  $( "#tabs" ).tabs();
 });
 function showDate()
 {
