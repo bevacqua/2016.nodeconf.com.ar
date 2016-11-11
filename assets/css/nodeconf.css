@@ -731,7 +731,6 @@ h4 {
 #schedule td.speaker { color: #FED007;}
 /*#schedule tr.break td, #schedule .title, #schedule th.speaker {text-align: center;}*/
 #schedule td.title {padding: 10px 30px; position: relative; text-transform: uppercase;}
-#schedule .break td
 #map {
   width : 100%;
   height : 400px;
@@ -1044,6 +1043,7 @@ footer a {
   #schedule td.speaker, #schedule td.title {display: block; width: 100%; text-align: left;}
   #schedule td.title, .workshops #schedule td.speaker {border-top: none; font-size: 14px; padding: 0 0 5px 0;}
   .workshops #schedule td.title  {border-top: solid 1px #0f171c; padding: 5px 0 0 0;}
+  .workshops #schedule .break td {padding: 5px;}
   #tabs ul {margin-bottom: 20px;}
   #schedule td {padding: 5px 0;}
   #schedule table tbody td.title:hover:after {color: transparent;}
@@ -1121,6 +1121,7 @@ footer a {
     margin-top : 0;
     text-align: center;
   }
+  #conduct h4 { text-align: center;}
   .code-conduct {
     padding : 20px 5px;
   }
