@@ -78,10 +78,10 @@ ga('send', 'pageview');
 <li class="here"><a href="#home">home</a></li>
 <li class="here"><a href="#about">about</a></li>
 <li class="here"><a href="#schedule">schedule</a></li>
-<li><a href="speakers.html">speakers</a></li>
-<li class="here"><a href="#tickets">tickets</a></li>
 <li class="here"><a href="#venue">venue</a></li>
 <li class="here"><a href="#sponsor">sponsors</a></li>
+<li><a href="speakers.html">speakers</a></li>
+<li><a href="workshops.html">workshops</a></li>
 </ul>
 </nav>
 </div>
@@ -380,35 +380,19 @@ Event Loop</div>
 <span class="hexa-in"></span>
 </div>
 Callback Hell</div>
-<div class="col-md-20"><button type="button" data-toggle="modal" data-target="#buyModal">
-<div class="hexagon now">
-<svg class="icon-buy">
--                <use xlink:href="images/buy.svg#buy"></use>
-</svg>
-<span class="hexa-out"></span>
-<span class="hexa-in"></span>
-</div>
-Late Ticket</button></div>
+<div class="col-md-20">
+  <div class="hexagon sold-out">
+  <svg class="icon-soldout">
+  <use xlink:href="images/buy.svg#sold-out"></use>
+  </svg>
+  <span class="hexa-out"></span>
+  <span class="hexa-in"></span>
+  </div>
+Late Ticket</div>
 </div>
 </div>
 </section>
 
-<div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-<h4 class="modal-title" id="myModalLabel">Buy Tickets</h4>
-</div>
-<div class="modal-body">
-<tito-widget event="nodeconfar/2016" releases="n7dhcxmck3m"></tito-widget>
-<script src='https://js.tito.io/v1' async></script>
-</div>
-</div>
-</div>
-</div>
 <section id="venue" class="dark-theme">
 <div class="container">
 <div class="row">
@@ -593,11 +577,8 @@ Late Ticket</button></div>
 <img src="images/media-brasil.png" alt="Brasiljs logo">
 </a>
 </li>
-
 </ul>
-<h2>We are currently seeking sponsorship</h2>
-<p>If you want to contribute, we'd love to hear from you</p>
-<a href="mailto:sponsors@nodeconf.com.ar" target="_blank" class="btn-action">Become a sponsor</a> </div>
+ </div>
 <div id="bodymovin"></div>
 </section>
 <footer>
