@@ -182,7 +182,7 @@
 header {
   position: fixed;
   right: 50px;
-  top:85%;
+  top:88%;
   z-index: 100;
   -webkit-transform-origin: bottom right;
   transform-origin: bottom right;
@@ -993,7 +993,7 @@ footer a {
   #bodymovin {
     padding-top : 100px;
   }
-  header {top: 60%;}
+  header {top: 63%;}
 }
 @media (min-width:993px) and (max-width:1170px) {
   .iso_color, .iso_black { background-position : 87% 100px;}
@@ -1077,7 +1077,7 @@ footer a {
   .tres {
     display: none;
   }
-  #conduct .col-md-8 {
+  .plain-header{
     float : none;
     clear : both;
   }
