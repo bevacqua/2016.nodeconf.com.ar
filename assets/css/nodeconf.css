@@ -179,6 +179,9 @@
 .menu_bar {
   display : none;
 }
+.menu {
+  width: 100vh;
+}
 header {
   position: fixed;
   right: 50px;
@@ -193,6 +196,7 @@ header {
 header nav {
   text-transform : uppercase;
   font-size : 16px;
+  text-align: center;
 }
 header nav ul {
   padding : 0;
@@ -512,6 +516,80 @@ header nav ul li {
   color : #f1f1f1;
   transition : all 0.5s ease;
 }
+.videoWrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	background-color: #000
+}
+.videoIframe, .videoPoster {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+.videoWrapper169 {
+	padding-top: 56%;
+  margin: 25px auto;
+}
+.videoIframe {
+	bottom: 0;
+	background-color: transparent
+}
+.videoPoster {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	background-position: 50% 50%;
+	background-size: cover;
+	text-indent: -999em;
+	overflow: hidden;
+	opacity: 1;
+	-webkit-transition: opacity .8s, height 0s;
+	-moz-transition: opacity .8s, height 0s;
+	transition: opacity .8s, height 0s;
+	-webkit-transition-delay: 0s, 0s;
+	-moz-transition-delay: 0s, 0s;
+	transition-delay: 0s, 0s
+}
+.videoPoster:after, .videoPoster:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+.videoPoster:before {
+	background-color: #fff;
+	width: 100px;
+	height: 100px;
+	margin: -50px 0 0 -50px;
+background : url(../../images/play.png) no-repeat;
+}
+.videoPoster:after {
+	width: 0;
+	height: 0;
+	margin: -15px 0 0 -10px;
+	border-left: 23px solid #BADE09;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	-webkit-transition: border-color .3s;
+	-moz-transition: border-color .3s;
+	transition: border-color .3s
+}
+.videoPoster:focus:after, .videoPoster:hover:after {
+	border-left-color: white
+}
+.videoWrapperActive .videoPoster {
+	opacity: 0;
+	height: 0;
+	-webkit-transition-delay: 0s, .8s;
+	-moz-transition-delay: 0s, .8s;
+	transition-delay: 0s, .8s
+}
 #tickets .hexagon {width:160px; height:92px;}
 .hexagon {position:relative; margin:70px auto; width:190px; height:110px; background-position:center center; background-size: 220px; z-index:1; line-height:110px; text-align:center; font-size:20px; letter-spacing:2px; color:#BADE09; text-transform: uppercase}
 .hexagon .hexa-out, .hexagon .hexa-in {position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; background:inherit; z-index:-1; backface-visibility:hidden}
@@ -525,8 +603,7 @@ header nav ul li {
   width : 100%;
   color : #1A2024;
   text-align : center;
-  padding : 50px 0 80px;
-  margin-top: 50px;
+  padding : 80px 0;
 }
 .call-to-action a {
   color : #1A2024;
@@ -544,7 +621,7 @@ header nav ul li {
   min-height: 800px;
 }
 .info-talk {clear: both; color: #f1f1f1; width: 85%; margin: 45px auto;}
-.info-talk h1 {font-size: 26px; padding-bottom: 10px; margin-bottom: 15px; }
+.info-talk h1 {font-size: 24px; padding-bottom: 10px; margin-bottom: 15px; }
 .info-talk a.in-prof {color: #999; font-size: 16px;}
 .profile-s {
   margin : 70px auto 0;
@@ -566,6 +643,9 @@ header nav ul li {
 }
 .profile-text a {
   font-size : 35px;
+}
+.info-talk .profile-text a {
+  color : #BADE09;
 }
 .profile-text p {
   margin-top : 30px;
@@ -707,9 +787,9 @@ h4 {
 #tabs li:before { left: 50%; margin-top: -5px; margin-left: -15px;}
 .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {cursor: pointer; background-color: #FED007;  }
 #tabs li:hover {background-color: #FED007; -webkit-transition: all .2s ease;}
-#tabs { width: 100%; max-width: 920px; margin: auto; clear: both;}
+#tabs { width: 100%; max-width: 920px; margin-bottom: 50px; clear: both;}
 #tabs ul { margin-bottom: 0;background-color: #f1f1f1; }
-#tabs li { padding: 15px 0; position: relative; display: inline-block; width: 50%; text-align: center; font-size: 24px;}
+#tabs li { padding: 15px 0; position: relative; display: inline-block; width: 50%; text-align: center; font-size: 24px; margin: 0 -1px;}
 #tabs:focus {outline: 0; border: none;}
 #tabs li a {display: block;}
 #schedule table {overflow: hidden; width: 100%;}
@@ -814,7 +894,7 @@ footer {
   height : 35px;
   line-height : 35px;
   background-color : #bbdc2f;
-  font-size : 13px;
+  font-size : 15px;
   padding : 0 5px;
   position : absolute;
   width : 100%;
@@ -1143,7 +1223,7 @@ footer a {
     float : none;
   }
   .profile-s {
-    width : 95%;
+    width : 100%;
   }
   .profile-s h2 {
     font-size : 40px;

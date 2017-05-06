@@ -22,9 +22,8 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
     }, options.animation);
   });
 };
-
-
 $(document).ready(function(){
+
   $(".owl-carousel").owlCarousel({items:1,loop:true,})
   $(window).scroll(function(){
     var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
