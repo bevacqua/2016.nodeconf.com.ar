@@ -1,15 +1,4 @@
 @font-face {
-  font-family: 'andale_monoregular';
-  src: url('../fonts/andale_mono-webfont.eot');
-  src: url('../fonts/andale_mono-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/andale_mono-webfont.woff2') format('woff2'),
-  url('../fonts/andale_mono-webfont.woff') format('woff'),
-  url('../fonts/andale_mono-webfont.ttf') format('truetype'),
-  url('../fonts/andale_mono-webfont.svg#andale_monoregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'icomoon';
   src:    url('../fonts/icomoon.eot?9azvlz');
   src:    url('../fonts/icomoon.eot?9azvlz#iefix') format('embedded-opentype'),
@@ -179,13 +168,10 @@
 .menu_bar {
   display : none;
 }
-.menu {
-  width: 100vh;
-}
 header {
   position: fixed;
   right: 50px;
-  top:88%;
+  top:570px;
   z-index: 100;
   -webkit-transform-origin: bottom right;
   transform-origin: bottom right;
@@ -204,7 +190,7 @@ header nav ul {
 header nav ul li a, header nav ul li a:focus {
   height : 40px;
   line-height : 40px;
-  padding : 0 12px;
+  padding : 0 10px;
   display : block;
   color : #495056;
 }
@@ -1073,7 +1059,6 @@ footer a {
   #bodymovin {
     padding-top : 100px;
   }
-  header {top: 63%;}
 }
 @media (min-width:993px) and (max-width:1170px) {
   .iso_color, .iso_black { background-position : 87% 100px;}
